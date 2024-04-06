@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full place-content-between font-parag text-xl font-harbour p-8">
+    <div className="flex w-full place-content-between font-parag text-xl font-harbour p-4 sm:p-8">
       <Link href="/">
         <h1 className="text-5xl">MALA</h1>
       </Link>
