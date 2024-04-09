@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "HARBOUR";
-  src: url("../../public/fonts/StampGothic.otf");
+  font-family: "COURIER";
+  src: url("../../public/fonts/CourierPrime-Regular.ttf");
 }
 
 :root {

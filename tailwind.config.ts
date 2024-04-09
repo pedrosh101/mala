@@ -15,7 +15,7 @@ const config: Config = {
           
       },
       fontFamily:{
-        harbour: ["HARBOUR"]
+        courier: ["COURIER"]
       }
     },
   },

@@ -47,12 +47,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full place-content-between font-parag text-xl font-harbour p-4 sm:p-8">
-      <Link href="/">
+    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8">
+      <Link href="/" className="h-4">
         <h1 className="text-5xl">MALA</h1>
       </Link>
-      <div onClick={toggleNav} className="text-2xl cursor-pointer">
-        <svg fill="none" viewBox="0 0 15 15" width="1.6em">
+      <div onClick={toggleNav} className="cursor-pointer">
+        <svg fill="none" viewBox="0 0 15 15" width="2.7em">
           <path
             fill="currentColor"
             fillRule="evenodd"
@@ -68,53 +68,53 @@ const Navbar = () => {
       >
         <div
           ref={navRef}
-          className={`fixed flex flex-col space-y-8 sm:justify-start justify-center text-2xl right-0 top-0 h-full text-center sm:text-left w-full sm:w-96 p-10 bg-white shadow transition-transform transform duration-700 text-black ${
+          className={`fixed flex flex-col space-y-8 sm:justify-start justify-center right-0 top-0 h-full text-center sm:text-left w-full sm:w-96 p-10 bg-transparent shadow transition-transform transform duration-700 text-white ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <button onClick={toggleNav} className="absolute top-6 sm:hidden text-3xl">X</button>
           <Link href="/">
-            <p className="pb-8 sm:hidden">HOME</p>
+            <p className="pb-8 sm:hidden text-base">Home</p>
           </Link>
           <Link href="/about">
-            <p>ABOUT</p>
+            <p>About</p>
           </Link>
           <div>
-        <button onClick={toggleSubmenu}>PAINTINGS</button>
+        <button onClick={toggleSubmenu}>Paintings</button>
         {isSubmenuOpen && (
-          <div className="sm:ml-6 text-base">
+          <div className="sm:ml-6 text-xs">
             <Link href="/paintings/item1">
-              <p className="my-4">MALAISMO</p>
+              <p className="my-4">Malaismo</p>
             </Link>
             <Link href="/paintings/item2">
-              <p className="mb-4">ABSTRACT</p>
+              <p className="mb-4">Abstract</p>
             </Link>
             <Link href="/paintings/item3">
-              <p className="mb-4">COGUMALA</p>
+              <p className="mb-4">Cogumala</p>
             </Link>
             <Link href="/paintings/item4">
-              <p>CONTEMPORARY</p>
+              <p>Contemporary</p>
             </Link>
           </div>
         )}
       </div>
           <Link href="/sculpture">
-            <p>SCULPTURE</p>
+            <p>Sculpture</p>
           </Link>
           <Link href="/theatre">
-            <p>THEATRE</p>
+            <p>Theater</p>
           </Link>
           <Link href="/cinema">
-            <p>CINEMA</p>
+            <p>Cinema</p>
           </Link>
           <Link href="/performance">
-            <p>PERFORMANCE</p>
+            <p>Performance</p>
           </Link>
           <Link href="/available-works">
-            <p>AVAILABLE WORKS</p>
+            <p>Available Works</p>
           </Link>
           <Link href="/contact">
-            <p>CONTACT</p>
+            <p>Contact</p>
           </Link>
         </div>
       </div>

@@ -8,8 +8,8 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === 8 ? 1 : prevImage + 1));
-    }, 5000);
+      setCurrentImage((prevImage) => (prevImage === 4 ? 1 : prevImage + 1));
+    }, 7000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <main
-        className="flex justify-between min-h-screen sm:text-5xl text-4xl bg-cover font-harbour bg-no-repeat bg-top text-white"
+        className="flex justify-between min-h-screen sm:text-5xl text-4xl bg-cover font-courier bg-no-repeat bg-top text-white"
         style={{
           backgroundImage: `url('/${currentImage}.jpg')`,
         }}
