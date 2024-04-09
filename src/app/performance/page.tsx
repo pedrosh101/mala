@@ -14,7 +14,7 @@ function Performance() {
             <h1>COVID19</h1>
           </Link>
           <h1>Desenho Livre</h1>
-          <h1>Man Don't Cry?</h1>
+          <h1>Man Don&lsquo;t Cry?</h1>
         </div>
       </main>
     </>
