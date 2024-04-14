@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../../components/navbar";
 import Link from "next/link";
 
 function Performance() {
@@ -11,11 +11,11 @@ function Performance() {
         <Navbar />
         <main className="flex justify-center align-middle items-center text-2xl font-courier text-white">
           <div className="flex flex-col text-center space-y-10 min-h-screen justify-center">
-            <Link href="/performance/COVID">
-              <h1 className="hover:text-red-50">COVID19</h1>
+              <h1 className="hover:text-red-50">Canson A3 90g</h1>
+            <h1 className="hover:text-red-50">Canson A3 black 150g</h1>
+            <Link href="/drawings/abstract/strathmore">
+            <h1 className="hover:text-red-50">Strathmore Toned Gray 118g</h1>
             </Link>
-            <h1 className="hover:text-red-50">Desenho Livre</h1>
-            <h1 className="hover:text-red-50">Man Don&lsquo;t Cry?</h1>
           </div>
         </main>
       </div>

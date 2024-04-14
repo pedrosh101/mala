@@ -72,49 +72,59 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <button onClick={toggleNav} className="absolute top-6 sm:hidden text-3xl">X</button>
+          <button
+            onClick={toggleNav}
+            className="absolute top-6 sm:hidden text-3xl"
+          >
+            X
+          </button>
           <Link href="/">
             <p className="pb-8 sm:hidden text-base">Home</p>
           </Link>
           <Link href="/about">
-            <p>About</p>
+            <p className="hover:text-red-50">About</p>
           </Link>
           <div>
-        <button onClick={toggleSubmenu}>Paintings</button>
-        {isSubmenuOpen && (
-          <div className="sm:ml-6 text-xs">
-            <Link href="/paintings/item1">
-              <p className="my-4">Malaismo</p>
-            </Link>
-            <Link href="/paintings/item2">
-              <p className="mb-4">Abstract</p>
-            </Link>
-            <Link href="/paintings/item3">
-              <p className="mb-4">Cogumala</p>
-            </Link>
-            <Link href="/paintings/item4">
-              <p>Contemporary</p>
-            </Link>
+            <button onClick={toggleSubmenu} className="hover:text-red-50">
+              Paintings
+            </button>
+            {isSubmenuOpen && (
+              <div className="sm:ml-6 text-xs">
+                <Link href="/paintings/item1">
+                  <p className="my-4 hover:text-red-50">Malaismo</p>
+                </Link>
+                <Link href="/paintings/item2">
+                  <p className="mb-4 hover:text-red-50">Abstract</p>
+                </Link>
+                <Link href="/paintings/item3">
+                  <p className="mb-4 hover:text-red-50">Cogumala</p>
+                </Link>
+                <Link href="/paintings/item4">
+                  <p className="hover:text-red-50">Contemporary</p>
+                </Link>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+          <Link href="/drawings">
+            <p className="hover:text-red-50">Drawings</p>
+          </Link>
           <Link href="/sculpture">
-            <p>Sculpture</p>
+            <p className="hover:text-red-50">Sculpture</p>
           </Link>
           <Link href="/theatre">
-            <p>Theater</p>
+            <p className="hover:text-red-50">Theater</p>
           </Link>
           <Link href="/cinema">
-            <p>Cinema</p>
+            <p className="hover:text-red-50">Cinema</p>
           </Link>
           <Link href="/performance">
-            <p>Performance</p>
+            <p className="hover:text-red-50">Performance</p>
           </Link>
           <Link href="/available-works">
-            <p>Available Works</p>
+            <p className="hover:text-red-50">Available Works</p>
           </Link>
           <Link href="/contact">
-            <p>Contact</p>
+            <p className="hover:text-red-50">Contact</p>
           </Link>
         </div>
       </div>
