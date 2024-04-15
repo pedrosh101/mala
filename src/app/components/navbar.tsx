@@ -51,7 +51,7 @@ const Navbar = () => {
       <Link href="/" className="h-4">
         <h1 className="text-5xl">MALA</h1>
       </Link>
-      <div onClick={toggleNav} className="cursor-pointer">
+      <div onClick={toggleNav} className="cursor-pointer h-4">
         <svg fill="none" viewBox="0 0 15 15" width="2.7em">
           <path
             fill="currentColor"
