@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Link from "next/link";
 
-function Performance() {
+function Drawings() {
   return (
     <>
       <div>
@@ -21,4 +21,4 @@ function Performance() {
   );
 }
 
-export default Performance;
+export default Drawings;

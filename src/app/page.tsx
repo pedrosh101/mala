@@ -8,9 +8,8 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === 12 ? 1 : prevImage + 1));
-    }, 7000);
-
+      setCurrentImage((prevImage) => (prevImage === 7 ? 1 : prevImage + 1));
+    }, 6000);
     return () => clearInterval(intervalId);
   }, []);
 

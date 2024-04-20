@@ -90,16 +90,16 @@ const Navbar = () => {
             </button>
             {isSubmenuOpen && (
               <div className="sm:ml-6 text-xs">
-                <Link href="/paintings/item1">
+                <Link href="/paintings/malaismo">
                   <p className="my-4 hover:text-red-50">Malaismo</p>
                 </Link>
-                <Link href="/paintings/item2">
+                <Link href="/paintings/abstract">
                   <p className="mb-4 hover:text-red-50">Abstract</p>
                 </Link>
-                <Link href="/paintings/item3">
+                <Link href="/paintings/cogumala">
                   <p className="mb-4 hover:text-red-50">Cogumala</p>
                 </Link>
-                <Link href="/paintings/item4">
+                <Link href="/paintings/contemporary">
                   <p className="hover:text-red-50">Contemporary</p>
                 </Link>
               </div>

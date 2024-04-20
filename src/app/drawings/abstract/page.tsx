@@ -9,7 +9,7 @@ function Performance() {
     <>
       <div>
         <Navbar />
-        <main className="flex justify-center align-middle items-center text-2xl font-courier text-white">
+        <main className="flex justify-center align-middle items-center text-2xl font-courier text-white bg-black">
           <div className="flex flex-col text-center space-y-10 min-h-screen justify-center">
               <h1 className="hover:text-red-50">Canson A3 90g</h1>
             <h1 className="hover:text-red-50">Canson A3 black 150g</h1>
