@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar";
 import Work from "@/app/components/work";
 
 
-function Performance() {
+function COVID() {
 
   const imageUrls = [
     "/performance/covid/1.jpg",
@@ -34,4 +34,4 @@ function Performance() {
   );
 }
 
-export default Performance;
+export default COVID;

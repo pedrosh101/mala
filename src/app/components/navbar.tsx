@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8">
       <Link href="/" className="h-4">
-        <h1 className="text-5xl">MALA</h1>
+        <h1 className="text-5xl">mala</h1>
       </Link>
       <div onClick={toggleNav} className="cursor-pointer h-4">
         <svg fill="none" viewBox="0 0 15 15" width="2.7em">

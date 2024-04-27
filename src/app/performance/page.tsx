@@ -14,8 +14,12 @@ function Performance() {
             <Link href="/performance/COVID">
               <h1 className="hover:text-red-50">COVID19</h1>
             </Link>
-            <h1 className="hover:text-red-50">Desenho Livre</h1>
-            <h1 className="hover:text-red-50">Man Don&lsquo;t Cry?</h1>
+            <Link href="/performance/desenho-livre">
+              <h1 className="hover:text-red-50">Desenho Livre</h1>
+            </Link>
+            <Link href="/performance/mandontcry">
+              <h1 className="hover:text-red-50">Man Don&lsquo;t Cry?</h1>
+            </Link>
           </div>
         </main>
       </div>
