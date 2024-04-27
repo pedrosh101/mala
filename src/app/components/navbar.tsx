@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8">
+    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8 md:pb-0 pb-8">
       <Link href="/" className="h-4">
         <h1 className="text-5xl">mala</h1>
       </Link>

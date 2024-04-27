@@ -25,7 +25,7 @@ function Work({ imageUrls }: any) {
 
   return (
     <main className="flex flex-col items-center min-h-screen bg-no-repeat bg-top text-white bg-black">
-      <div className="grid grid-cols-3 gap-4 p-4 w-full">
+      <div className="grid md:grid-cols-3 gap-4 p-4 w-full">
         {imageUrls.map((imageUrl: any, index: any) => (
           <div key={index} className="relative min-h-[500px] w-full">
             <Image

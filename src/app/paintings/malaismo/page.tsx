@@ -57,7 +57,7 @@ function Malaismo() {
   return (
     <>
       <Navbar />
-      <div className="flex w-full justify-center space-x-8 font-courier">
+      <div className="flex w-full justify-center space-x-8 font-courier md:mt-0 mt-6">
         <button onClick={() => handleButtonClick(inside)}>Inside</button>
         <button onClick={() => handleButtonClick(outside)}>Outside</button>
       </div>
