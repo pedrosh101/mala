@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8 md:pb-0 pb-8">
+    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8 md:pb-0 pb-8 mb-10">
       <Link href="/" className="h-4">
         <h1 className="text-5xl">mala</h1>
       </Link>
@@ -84,6 +84,9 @@ const Navbar = () => {
           <Link href="/about">
             <p className="hover:text-red-50">About</p>
           </Link>
+          <Link href="/collage">
+            <p className="hover:text-red-50">Collage</p>
+          </Link>
           <div>
             <button onClick={toggleSubmenu} className="hover:text-red-50">
               Paintings
@@ -105,26 +108,8 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link href="/drawings">
-            <p className="hover:text-red-50">Drawings</p>
-          </Link>
-          <Link href="/sculpture">
-            <p className="hover:text-red-50">Sculpture</p>
-          </Link>
-          <Link href="/theatre">
-            <p className="hover:text-red-50">Theater</p>
-          </Link>
-          <Link href="/cinema">
-            <p className="hover:text-red-50">Cinema</p>
-          </Link>
           <Link href="/performance">
             <p className="hover:text-red-50">Performance</p>
-          </Link>
-          <Link href="/available-works">
-            <p className="hover:text-red-50">Available Works</p>
-          </Link>
-          <Link href="/contact">
-            <p className="hover:text-red-50">Contact</p>
           </Link>
         </div>
       </div>

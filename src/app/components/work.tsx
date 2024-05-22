@@ -1,21 +1,19 @@
+"use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Work({ imageUrls }: any) {
   const [modalOpen, setModalOpen] = useState(false);
+  const [initialSlide, setInitialSlide] = useState<number>(0);
 
-  const [swiperImages, setSwiperImages] = useState<string[]>([]);
-
-  const openModal = (imageUrl: string) => {
-    if (imageUrl === "/paintings/abstract/8.jpg") {
-      setSwiperImages([
-        "/paintings/abstract/macro/A/1.jpg",
-        "/paintings/abstract/macro/A/2.jpg",
-      ]);
-
-    }
+  const openModal = (index: number) => {
+    setInitialSlide(index);
     setModalOpen(true);
   };
 
@@ -26,46 +24,65 @@ function Work({ imageUrls }: any) {
   return (
     <main className="flex flex-col items-center min-h-screen bg-no-repeat bg-top text-white bg-black">
       <div className="grid md:grid-cols-3 gap-4 p-4 w-full">
-        {imageUrls.map((imageUrl: any, index: any) => (
+        {imageUrls.map((image: { url: string; title: string }, index: number) => (
           <div key={index} className="relative min-h-[500px] w-full">
             <Image
-              src={imageUrl}
-              alt={`Imagem ${index + 1}`}
+              src={image.url}
+              alt={image.title}
               fill
-              className="object-cover"
-              onClick={() => openModal(imageUrl)} // Adicionando evento de clique na imagem
+              sizes=""
+              className="object-cover cursor-pointer"
+              onClick={() => openModal(index)}
             />
           </div>
         ))}
       </div>
-      {modalOpen && ( // Renderiza o modal somente se estiver aberto
-        <div className="fixed inset-0 flex items-center justify-center bg-black text-black bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg">
-     
-            {swiperImages.length > 0 && (
-              <Swiper
-                spaceBetween={30}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
+      {modalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white/20 p-2 rounded-lg h-[90%] w-[90%]">
+            <div className="flex w-full justify-end">
+              <svg
+                onClick={closeModal}
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                height="1.6em"
+                width="1.6em"
+                className="bg-red-600 rounded cursor-pointer"
               >
-                {swiperImages.map((image, index) => (
-                  <SwiperSlide key={index} className="relative h-96 w-96 overflow-hidden">
-                    <div className="relative h-96 w-96 overflow-hidden">
-
+                <path
+                  fill="red-200"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={32}
+                  d="M368 368L144 144M368 144L144 368"
+                />
+              </svg>
+            </div>
+            <Swiper
+              initialSlide={initialSlide}
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              modules={[Navigation, Pagination]}
+            >
+              {imageUrls.map((image: { url: string; title: string }, index: number) => (
+                <SwiperSlide key={index}>
+                  <div className="relative w-full my-2 h-[80vh]">
                     <Image
-                      src={image}
+                      src={image.url}
                       fill
-                      className="w-full h-full object-cover"
-                      alt={`Imagem ${index + 1}`}
+                      className="object-contain"
+                      alt={image.title}
                     />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            )}
-            <button onClick={closeModal}>Fechar</button>{" "}
-            {/* Botão para fechar o modal */}
+                  </div>
+                  <div className="flex w-full justify-center mb-8">
+                    <h1>{image.title}</h1>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       )}

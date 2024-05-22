@@ -8,23 +8,69 @@ import Work from "@/app/components/work";
 function Desenho() {
 
   const imageUrls = [
-    "/performance/desenholivre/1.jpg",
-    "/performance/desenholivre/2.jpg",
-    "/performance/desenholivre/3.jpg",
-    "/performance/desenholivre/4.jpg",
-    "/performance/desenholivre/5.jpg",
-    "/performance/desenholivre/6.jpg",
-    "/performance/desenholivre/7.jpg",
-    "/performance/desenholivre/8.jpg",
-    "/performance/desenholivre/9.jpg",
-    "/performance/desenholivre/10.jpg",
-    "/performance/desenholivre/11.jpg",
-    "/performance/desenholivre/12.jpg",
-    "/performance/desenholivre/13.jpg",
-    "/performance/desenholivre/14.jpg",
-    "/performance/desenholivre/15.jpg",
+    {
+      url: "/performance/desenho-livre/1.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/2.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/3.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/4.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/5.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/6.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/7.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/8.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/9.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/10.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/11.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/12.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/13.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/14.jpg",
+      title: "",
+    },
+    {
+      url: "/performance/desenho-livre/15.jpg",
+      title: "",
+    },
 
   ];
+
 
   return (
     <>
