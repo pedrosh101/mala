@@ -7,6 +7,28 @@ import Work from "@/app/components/work";
 function Cogumala() {
   const insideCogu = [
     {
+      title: "",
+      images: [
+        {
+          url: "/paintings/cogumala/inside/54.jpg",
+          title: "2020 _Ready for the fight_ mix media on wood  90x60",
+        },
+        {
+          url: "/paintings/cogumala/inside/55.jpg",
+          title: "2020,  _Retirantes_ re-interpretação de Portinari,  mix media on canvas 200x120",
+        },
+        {
+          url: "/paintings/cogumala/inside/56.jpg",
+          title: "2020, _Visceral_ mixmedia on canvas 100x40",
+        },
+        {
+          url: "/paintings/cogumala/inside/57.jpg",
+          title: "2021  _Retirantes_, interpretação de Portinari, mix media on canvas 150 x 90 ",
+        },
+
+      ],
+    },
+    {
       title: "2020, mix media, 25x15 Série 'Tamanho não é documento'",
       images: [
         {
