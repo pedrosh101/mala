@@ -78,6 +78,7 @@ const Navbar = () => {
           >
             X
           </button>
+          
           <Link href="/">
             <p className="pb-8 sm:hidden text-base">Home</p>
           </Link>
@@ -92,24 +93,28 @@ const Navbar = () => {
               Paintings
             </button>
             {isSubmenuOpen && (
-              <div className="sm:ml-6 text-xs">
-                <Link href="/paintings/malaismo">
-                  <p className="my-4 hover:text-red-50">Malaismo</p>
-                </Link>
+              <div className="sm:ml-4 text-xs">
                 <Link href="/paintings/abstract">
-                  <p className="mb-4 hover:text-red-50">Abstract</p>
+                  <p className="my-4 hover:text-red-50">Abstract</p>
                 </Link>
                 <Link href="/paintings/cogumala">
                   <p className="mb-4 hover:text-red-50">Cogumala</p>
                 </Link>
-                <Link href="/paintings/contemporary">
-                  <p className="hover:text-red-50">Contemporary</p>
+                <Link href="/paintings/malaismo">
+                  <p className="hover:text-red-50">Malaismo</p>
                 </Link>
+
               </div>
             )}
           </div>
           <Link href="/performance">
             <p className="hover:text-red-50">Performance</p>
+          </Link>
+          <Link href="/">
+            <p className="hover:text-red-5 pt-8">Malaismo Portfólio</p>
+          </Link>
+          <Link href="/">
+            <p className="hover:text-red-50">Portfólio Completo</p>
           </Link>
         </div>
       </div>

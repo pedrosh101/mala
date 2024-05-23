@@ -5,46 +5,137 @@ import Navbar from "../../components/navbar";
 import Work from "@/app/components/work";
 
 function Malaismo() {
+
   const inside = [
-    "/paintings/malaismo/inside/1.jpg",
-    "/paintings/malaismo/inside/2.jpg",
-    "/paintings/malaismo/inside/3.jpg",
-    "/paintings/malaismo/inside/4.jpg",
-    "/paintings/malaismo/inside/5.jpg",
-    "/paintings/malaismo/inside/6.jpg",
-    "/paintings/malaismo/inside/7.jpg",
-    "/paintings/malaismo/inside/8.jpg",
-    "/paintings/malaismo/inside/9.jpg",
-    "/paintings/malaismo/inside/10.jpg",
-    "/paintings/malaismo/inside/11.jpg",
-    "/paintings/malaismo/inside/12.jpg",
-    "/paintings/malaismo/inside/13.jpg",
-    "/paintings/malaismo/inside/14.jpg",
+    {
+      url: "/paintings/malaismo/inside/1.jpg",
+      title: "_3333 malas_ mix media on canvas 220x80 2021",
+    },
+    {
+      url: "/paintings/malaismo/inside/2.jpg",
+      title: "_Back to Black_ oil on canvas 70x50 2023_",
+    },
+    {
+      url: "/paintings/malaismo/inside/3.jpg",
+      title: "_Carnaval_ oil on canvas 90x60 2023",
+    },
+    {
+      url: "/paintings/malaismo/inside/4.jpg",
+      title: "_Caterpillar_ oil on canvas 90x60 2023",
+    },
+    {
+      url: "/paintings/malaismo/inside/5.jpg",
+      title: "_Rehab_ oil on canvas 90x60 2023",
+    },
+    {
+      url: "/paintings/malaismo/inside/6.jpg",
+      title: "_Summer_ mix media on canvas 90x60 2023",
+    },
+    {
+      url: "/paintings/malaismo/inside/7.jpg",
+      title: "_Titanium_ oil on canvas 70x50 2023",
+    },
+    {
+      url: "/paintings/malaismo/inside/8.jpg",
+      title: "_Untitled_ acrilic on canvas 120x70 2022",
+    },
+    {
+      url: "/paintings/malaismo/inside/9.jpg",
+      title: "Untitled 100x100 spray on canvas 2022",
+    },
+    { url: "/paintings/malaismo/inside/10.jpg", title: ""},
+
   ];
 
   const outside = [
-    "/paintings/malaismo/outside/1.jpg",
-    "/paintings/malaismo/outside/2.jpg",
-    "/paintings/malaismo/outside/3.jpg",
-    "/paintings/malaismo/outside/4.jpg",
-    "/paintings/malaismo/outside/5.jpg",
-    "/paintings/malaismo/outside/6.jpg",
-    "/paintings/malaismo/outside/7.jpg",
-    "/paintings/malaismo/outside/8.jpg",
-    "/paintings/malaismo/outside/9.jpg",
-    "/paintings/malaismo/outside/10.jpg",
-    "/paintings/malaismo/outside/11.jpg",
-    "/paintings/malaismo/outside/12.jpg",
-    "/paintings/malaismo/outside/13.jpg",
-    "/paintings/malaismo/outside/14.jpg",
-    "/paintings/malaismo/outside/15.jpg",
-    "/paintings/malaismo/outside/16.jpg",
-    "/paintings/malaismo/outside/17.jpg",
-    "/paintings/malaismo/outside/18.jpg",
-    "/paintings/malaismo/outside/19.jpg",
-    "/paintings/malaismo/outside/20.jpg",
-    "/paintings/malaismo/outside/21.jpg",
-    "/paintings/malaismo/outside/22.jpg",
+    {
+      url: "/paintings/malaismo/outside/1.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/2.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/3.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/4.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/5.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/6.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/7.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/8.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/9.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/10.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/11.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/12.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/13.jpg",
+      title: "Aracaju 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/14.jpg",
+      title: "Aracaju 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/15.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/16.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/17.jpg",
+      title: "",
+    },
+    {
+      url: "/paintings/malaismo/outside/18.jpg",
+      title: "Rio de Janeiro 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/19.jpg",
+      title: "Rio de Janeiro 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/20.jpg",
+      title: "Rio de Janeiro 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/21.jpg",
+      title: "Rio de Janeiro 2020",
+    },
+    {
+      url: "/paintings/malaismo/outside/22.jpg",
+      title: "Rio de Janeiro 2020",
+    },
 
   ];
 

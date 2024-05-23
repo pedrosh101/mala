@@ -53,7 +53,27 @@ function Abstract() {
     },
     {
       url: "/paintings/abstract/13.jpg",
+      title: "2022 untitled 160x90 mix media on canvas ",
+    },
+    {
+      url: "/paintings/abstract/14.jpg",
+      title: "2023-_laranja_violeta_-450x100_-emated-on-canvas-",
+    },
+    {
+      url: "/paintings/abstract/15.jpg",
+      title: "2023 Untitled 250x90 mixmedia on linen",
+    },
+    {
+      url: "/paintings/abstract/16.jpg",
       title: "2024 _basic black_ 90x90 mix media on  canvas_",
+    },
+    {
+      url: "/paintings/abstract/17.jpg",
+      title: "2024 Untitled 120x180 mixmedia on linen",
+    },
+    {
+      url: "/paintings/abstract/18.jpg",
+      title: "2024 Untitled 120x180 mixmedia on linen (1)",
     },
   ];
 
