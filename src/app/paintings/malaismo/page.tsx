@@ -43,10 +43,22 @@ function Malaismo() {
           title: "_Untitled_ acrilic on canvas 120x70 2022",
         },
         {
+          url: "/paintings/malaismo/inside/a.jpg",
+          title: "2021. 100x100 mix media 'untitled'",
+        },
+        {
+          url: "/paintings/malaismo/inside/b.jpg",
+          title: "2024 - Série Algarve, 'Untitled', mix media - 100x100",
+        },
+        {
+          url: "/paintings/malaismo/inside/c.jpg",
+          title: "2024 - Série Algarve, 'Untitled', mix media - 120x120",
+        },
+        { url: "/paintings/malaismo/inside/10.jpg", title: ""},
+        {
           url: "/paintings/malaismo/inside/9.jpg",
           title: "Untitled 100x100 spray on canvas 2022",
         },
-        { url: "/paintings/malaismo/inside/10.jpg", title: ""},
 
       ],
     },
