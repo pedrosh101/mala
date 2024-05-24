@@ -2,7 +2,6 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -110,16 +109,11 @@ const Navbar = () => {
           <Link href="/performance">
             <p className="hover:text-red-50">Performance</p>
           </Link>
-      
-              <a
-                className="hover:text-red-50 pt-8"
-                href="/mala.pdf"
-                download
-              >
-                Malaismo Portfólio
-              </a>
-          
-         
+
+          <a className="hover:text-red-50 pt-8" href="/portfolio.pdf" download>
+            Malaismo Portfólio
+          </a>
+
           <Link href="/">
             <p className="hover:text-red-5 ">Portfólio Completo</p>
           </Link>
