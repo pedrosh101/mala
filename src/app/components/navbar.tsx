@@ -1,4 +1,5 @@
-// components/NavToggle.tsx
+"use client";
+
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
@@ -51,16 +52,56 @@ const Navbar = () => {
       <Link href="/" className="h-4">
         <h1 className="text-5xl">mala</h1>
       </Link>
-      <div onClick={toggleNav} className="cursor-pointer h-4">
-        <svg fill="none" viewBox="0 0 15 15" width="2.7em">
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M1.5 3a.5.5 0 000 1h12a.5.5 0 000-1h-12zM1 7.5a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5zm0 4a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5z"
-            clipRule="evenodd"
-          />
-        </svg>
+      <div className="flex ">
+        {/* Hamburger icon for mobile */}
+        <div onClick={toggleNav} className="cursor-pointer h-4 sm:hidden">
+          <svg fill="none" viewBox="0 0 15 15" width="2.7em">
+            <path
+              fill="currentColor"
+              fillRule="evenodd"
+              d="M1.5 3a.5.5 0 000 1h12a.5.5 0 000-1h-12zM1 7.5a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5zm0 4a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        {/* Horizontal menu for desktop */}
+        <div className="hidden sm:flex space-x-8 pt-3">
+          <Link href="/about">
+            <p className="hover:text-red-50">About</p>
+          </Link>
+          <Link href="/collage">
+            <p className="hover:text-red-50">Collage</p>
+          </Link>
+          <div className="relative">
+            <button onClick={toggleSubmenu} className="hover:text-red-50">
+              Paintings
+            </button>
+            {isSubmenuOpen && (
+              <div className="absolute left-0 mt-2 p-2 px-4 bg-white/50 shadow-lg text-black z-50">
+                <Link href="/paintings/abstract">
+                  <p className="my-4 ">Abstract</p>
+                </Link>
+                <Link href="/paintings/cogumala">
+                  <p className="mb-4 ">Cogumala</p>
+                </Link>
+                <Link href="/paintings/malaismo">
+                  <p className="">Malaismo</p>
+                </Link>
+              </div>
+            )}
+          </div>
+          <Link href="/performance">
+            <p className="hover:text-red-50">Performance</p>
+          </Link>
+          <a className="hover:text-red-50" href="/portfolio.pdf" download>
+            Malaismo Portfólio
+          </a>
+          <Link href="/">
+            <p className="hover:text-red-50">Portfólio Completo</p>
+          </Link>
+        </div>
       </div>
+      {/* Overlay for mobile */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-75 z-50 transition-opacity duration-700 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -115,7 +156,7 @@ const Navbar = () => {
           </a>
 
           <Link href="/">
-            <p className="hover:text-red-5 ">Portfólio Completo</p>
+            <p className="hover:text-red-50">Portfólio Completo</p>
           </Link>
         </div>
       </div>
