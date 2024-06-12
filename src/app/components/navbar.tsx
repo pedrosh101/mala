@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const navRef = useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -16,10 +15,6 @@ const Navbar = () => {
       setIsOpen(false);
       document.removeEventListener("mousedown", handleClickOutside);
     }
-  };
-
-  const toggleSubmenu = () => {
-    setIsSubmenuOpen(!isSubmenuOpen);
   };
 
   useEffect(() => {
@@ -48,10 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full font-courier place-content-between text-sm p-4 sm:p-8 md:pb-0 pb-8 mb-10">
-      <Link href="/" className="h-4">
-        <h1 className="text-5xl">mala</h1>
-      </Link>
+    <div className="flex w-full font-courier place-content-end text-sm p-4 sm:p-8 md:pb-0 pb-8 mb-10">
       <div className="flex ">
         {/* Hamburger icon for mobile */}
         <div onClick={toggleNav} className="cursor-pointer h-4 sm:hidden">
@@ -69,36 +61,21 @@ const Navbar = () => {
           <Link href="/about">
             <p className="hover:text-red-50">About</p>
           </Link>
-          <Link href="/collage">
-            <p className="hover:text-red-50">Collage</p>
+          <Link href="/available-works">
+            <p className="hover:text-red-50">Available Works</p>
           </Link>
-          <div className="relative">
-            <button onClick={toggleSubmenu} className="hover:text-red-50">
-              Paintings
-            </button>
-            {isSubmenuOpen && (
-              <div className="absolute left-0 mt-2 p-2 px-4 bg-white/50 shadow-lg text-black z-50">
-                <Link href="/paintings/abstract">
-                  <p className="my-4 ">Abstract</p>
-                </Link>
-                <Link href="/paintings/cogumala">
-                  <p className="mb-4 ">Cogumala</p>
-                </Link>
-                <Link href="/paintings/malaismo">
-                  <p className="">Malaismo</p>
-                </Link>
-              </div>
-            )}
-          </div>
-          <Link href="/performance">
-            <p className="hover:text-red-50">Performance</p>
+          <Link href="/inside">
+            <p className="hover:text-red-50">Inside</p>
+          </Link>
+          <Link href="/outside">
+            <p className="hover:text-red-50">Outside</p>
           </Link>
           <a className="hover:text-red-50" href="/portfolio.pdf" download>
             Malaismo Portfólio
           </a>
-          <Link href="/">
-            <p className="hover:text-red-50">Portfólio Completo</p>
-          </Link>
+          <a className="hover:text-red-50" href="/portfolio.pdf" download>
+            Portfólio Completo
+          </a>
         </div>
       </div>
       {/* Overlay for mobile */}
@@ -126,38 +103,21 @@ const Navbar = () => {
           <Link href="/about">
             <p className="hover:text-red-50">About</p>
           </Link>
-          <Link href="/collage">
-            <p className="hover:text-red-50">Collage</p>
+          <Link href="/available-works">
+            <p className="hover:text-red-50">Available Works</p>
           </Link>
-          <div>
-            <button onClick={toggleSubmenu} className="hover:text-red-50">
-              Paintings
-            </button>
-            {isSubmenuOpen && (
-              <div className="sm:ml-4 text-xs">
-                <Link href="/paintings/abstract">
-                  <p className="my-4 hover:text-red-50">Abstract</p>
-                </Link>
-                <Link href="/paintings/cogumala">
-                  <p className="mb-4 hover:text-red-50">Cogumala</p>
-                </Link>
-                <Link href="/paintings/malaismo">
-                  <p className="hover:text-red-50">Malaismo</p>
-                </Link>
-              </div>
-            )}
-          </div>
-          <Link href="/performance">
-            <p className="hover:text-red-50">Performance</p>
+          <Link href="/inside">
+            <p className="hover:text-red-50">Inside</p>
           </Link>
-
-          <a className="hover:text-red-50 pt-8" href="/portfolio.pdf" download>
+          <Link href="/outside">
+            <p className="hover:text-red-50">Outside</p>
+          </Link>
+          <a className="hover:text-red-50" href="/portfolio.pdf" download>
             Malaismo Portfólio
           </a>
-
-          <Link href="/">
-            <p className="hover:text-red-50">Portfólio Completo</p>
-          </Link>
+          <a className="hover:text-red-50" href="/portfolio.pdf" download>
+            Portfólio Completo
+          </a>
         </div>
       </div>
     </div>
