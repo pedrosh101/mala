@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Navbar from "./components/navbar";
+import Image from "next/image";
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(1);
@@ -15,13 +16,17 @@ export default function Home() {
 
   return (
     <>
-      <main
-        className="flex justify-between min-h-screen sm:text-5xl text-4xl bg-cover font-courier bg-no-repeat bg-top text-white"
-        style={{
-          backgroundImage: `url('/${currentImage}.jpg')`,
-        }}
-      >
+      <main className="flex justify-between min-h-screen sm:text-5xl text-4xl bg-cover font-courier bg-no-repeat bg-top text-white">
         <Navbar />
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src={`/${currentImage}.jpg`}
+            alt="Background image"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+        </div>
       </main>
     </>
   );

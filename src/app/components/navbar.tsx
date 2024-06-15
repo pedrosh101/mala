@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full font-courier place-content-end text-sm p-4 sm:p-8 md:pb-0 pb-8 mb-10">
+    <div className="flex w-full font-courier place-content-end text-sm p-4 sm:p-8 md:pb-0 pb-8 mb-10 z-50">
       <div className="flex ">
         {/* Hamburger icon for mobile */}
         <div onClick={toggleNav} className="cursor-pointer h-4 sm:hidden">
@@ -57,7 +57,7 @@ const Navbar = () => {
           </svg>
         </div>
         {/* Horizontal menu for desktop */}
-        <div className="hidden sm:flex space-x-8 pt-3">
+        <div className="hidden sm:flex space-x-8 pt-3 h-fit">
           <Link href="/about">
             <p className="hover:text-red-50">About</p>
           </Link>
