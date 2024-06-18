@@ -79,7 +79,7 @@ function Abstract() {
 
   return (
     <>
-      <Navbar />
+      <Navbar isProjetosPage={true} />
       <Work imageUrls={imageUrls} />
     </>
   );

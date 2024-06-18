@@ -8,7 +8,7 @@ function Paintings() {
   return (
     <>
       <div>
-        <Navbar />
+      <Navbar isProjetosPage={true} />
         <main className="flex justify-center align-middle items-center text-2xl font-courier text-white">
           <div className="flex flex-col text-center space-y-10 min-h-screen justify-center">
             <Link href="/paintings/abstract">
