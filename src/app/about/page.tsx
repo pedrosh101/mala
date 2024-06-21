@@ -76,7 +76,7 @@ function About() {
           <h1>
             Explora e pesquisa as possibilidades da Performance, tendo realizada
             algumas em solo europeu, como COVID 19, no final da Pandemia em
-            Faro, PT, e &quot;Mans don't cry&quot; em Málaga, no sul da Espanha.
+            Faro, PT, e &quot;Mans don&apos;t cry&quot; em Málaga, no sul da Espanha.
           </h1>
           <h1>
          
