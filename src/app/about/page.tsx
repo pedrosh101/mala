@@ -33,7 +33,7 @@ function About() {
             ruas, com a profundidade e a complexidade do expressionismo
             abstrato. Seu processo criativo é muitas vezes um ato de abstração
             total, onde o gesto e a automatização desempenham papéis centrais.
-            "Pintar sem pensar" onde a automação e a repetição da escrita de seu
+            &quot;Pintar sem pensar&quot; onde a automação e a repetição da escrita de seu
             TAG - é uma espécie de mantra, onde o artista cria uma linguagem
             particular e um estilo próprio.
           </h1>
@@ -54,8 +54,8 @@ function About() {
           </h1>
           <h1 className="pb-16">
          
-            Os "Cogumelos babilónicos"(ou "Cogumalas" em português e
-            "Mushuroomala" em inglês) é seu trabalhão mais figurativo - são
+            Os &quot;Cogumelos babilónicos&quot;(ou &quot;Cogumalas&quot; em português e
+              &quot;Mushuroomala&quot; em inglês) é seu trabalhão mais figurativo - são
             personagens que nasceram em paredes das ruas brasileiras e com o
             confinamento da pandemia, passaram também para as telas. Assim como
             em suas telas abstratas, abusa de uma vasta paleta de cores, de uma
@@ -70,13 +70,13 @@ function About() {
             Sua prática/pesquisa artística vai muito além da Pintura... Matheus
             Malavazi é Ator e atuou nos palcos e nos sets de filmagem nos 10
             anos que antecederam a Pandemia. Fez teatro nos palcos e
-            principalmente nas ruas Cariocas, integrando o grupo "TáNaRua", do
+            principalmente nas ruas Cariocas, integrando o grupo &quot;TáNaRua&quot;, do
             grande mestre Amir Hadad.
           </h1>
           <h1>
             Explora e pesquisa as possibilidades da Performance, tendo realizada
             algumas em solo europeu, como COVID 19, no final da Pandemia em
-            Faro, PT, e "Mans don't cry" em Málaga, no sul da Espanha.
+            Faro, PT, e &quot;Mans don't cry&quot; em Málaga, no sul da Espanha.
           </h1>
           <h1>
          
