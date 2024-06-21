@@ -38,7 +38,7 @@ function About() {
             particular e um estilo próprio.
           </h1>
           <h1>
-            {" "}
+           
             Cada tela, linho, ou qualquer outra superfície é como se fosse um
             tubo de ensaio, onde a experimentação das mais diversas cores, dos
             mais diversos materiais e superfícies fazem parte de seu processo e
@@ -48,12 +48,12 @@ function About() {
             perspectiva individual.
           </h1>
           <h1>
-            {" "}
+         
             Essa é a sua principal pesquisa visual dentro da pintura - mas não
             só.
           </h1>
           <h1 className="pb-16">
-            {" "}
+         
             Os "Cogumelos babilónicos"(ou "Cogumalas" em português e
             "Mushuroomala" em inglês) é seu trabalhão mais figurativo - são
             personagens que nasceram em paredes das ruas brasileiras e com o
@@ -79,7 +79,7 @@ function About() {
             Faro, PT, e "Mans don't cry" em Málaga, no sul da Espanha.
           </h1>
           <h1>
-            {" "}
+         
             No Cinema, sua janela de entrada na sétima arte foi a atuação e,
             depois de realizar seu primeiro longa metragem, se apaixonou pelo
             cinema e quis ir também para trás das câmeras. Formou-se em Direção
@@ -99,7 +99,7 @@ function About() {
 
           <h1>CV</h1>
           <h1>
-            {" "}
+         
             2021_2024 - LICENCIATURA EM ARTES VISUAIS - Universidade do Algarve
             (UALG)
           </h1>
