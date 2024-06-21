@@ -1,204 +1,394 @@
+"use client";
+
+import { useState } from "react";
 import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 
+
+
 function Inside() {
+
+  const [selectedYear, setSelectedYear] = useState<string | null>(null);
+
   const imageUrls = [
     {
       url: "/Inside/1.jpg",
-      title: "2024. Série Algarve, _the bridge_, acrílico, spray, esmalte, folhas de ouro on canvas, 120x120",
+      ano: "2024",
+      title: "Série Algarve, the bridge",
+      material: "acrílico, spray, esmalte, folhas de ouro on canvas",
+      size: "120x120",
     },
     {
       url: "/Inside/2.jpg",
-      title: "2024. De _black and white_ series, _Bright Darkness_, acrílico, spray, esmalte, oil on canvas, 120x120",
+      ano: "2024",
+      title: "De black and white series, Bright Darkness",
+      material: "acrílico, spray, esmalte, óleo on canvas",
+      size: "120x120",
     },
     {
       url: "/Inside/3.jpg",
-      title: "2024. _untitled_ spray, esmalte acrílico on canvas, 120x120",
+      ano: "2024",
+      title: "untitled",
+      material: "spray, esmalte, acrílico on canvas",
+      size: "120x120",
     },
     {
       url: "/Inside/4.jpg",
-      title: "2024. _Summer is coming_ oil  on linen, 120x100",
+      ano: "2024",
+      title: "Summer is coming",
+      material: "óleo on linen",
+      size: "120x100",
     },
     {
       url: "/Inside/5.jpg",
-      title: "2024, untitled, Spray acrilic and Grafiti on canvas_",
+      ano: "2024",
+      title: "untitled",
+      material: "spray acrílico e grafite on canvas",
+      size: "",
     },
     {
       url: "/Inside/6.jpg",
-      title: "2024, _Untitled_, spray on canvas, 100x100",
+      ano: "2024",
+      title: "Untitled",
+      material: "spray on canvas",
+      size: "100x100",
     },
     {
       url: "/Inside/7.jpg",
-      title: "2024, _untitled_, folha de ouro e tinta esmalte, 9 canvas 35x25",
+      ano: "2024",
+      title: "untitled",
+      material: "folha de ouro e tinta esmalte on 9 canvases",
+      size: "35x25 cada",
     },
     {
       url: "/Inside/8.jpg",
-      title: "2024 _basic black_ acrílico, spray, grafite, carvão, oil and oil stickers on canvas  on  canvas_",
+      ano: "2024",
+      title: "basic black",
+      material: "acrílico, spray, grafite, carvão, óleo e adesivos de óleo on canvas",
+      size: "",
     },
     {
       url: "/Inside/9.jpg",
-      title: "2024 - Série Algarve, _Untitled_, acrílico, oil, pastel, gesso on canvas.  45x35",
+      ano: "2024",
+      title: "Série Algarve, Untitled",
+      material: "acrílico, óleo, pastel, gesso on canvas",
+      size: "45x35",
     },
     {
       url: "/Inside/10.jpg",
-      title: "2024 - Série Algarve, _Untitled_ #5, spray, acrílico, gesso, pastel, oil on Canvas, 100x100",
+      ano: "2024",
+      title: "Série Algarve, Untitled #5",
+      material: "spray, acrílico, gesso, pastel, óleo on canvas",
+      size: "100x100",
     },
     {
       url: "/Inside/11.jpg",
-      title: "2024 - Série Algarve, _Untitled_ #3, mix media - 120x120",
+      ano: "2024",
+      title: "Série Algarve, Untitled #3",
+      material: "mix media",
+      size: "120x120",
     },
     {
       url: "/Inside/12.jpg",
-      title: "2024 - Série Algarve, _Untitled_ #2, mix media - 100x100",
+      ano: "2024",
+      title: "Série Algarve, Untitled #2",
+      material: "mix media",
+      size: "100x100",
     },
     {
       url: "/Inside/13.jpg",
-      title: "2024 - Série Algarve, _Untitled_ #1, mix media - 100x100",
+      ano: "2024",
+      title: "Série Algarve, Untitled #1",
+      material: "mix media",
+      size: "100x100",
     },
     {
       url: "/Inside/14.jpg",
-      title: "2023. da serie Andalucía _Málaga_, mix media on linen. 100x100 ",
+      ano: "2023",
+      title: "da série Andalucía, Málaga",
+      material: "mix media on linen",
+      size: "100x100",
     },
     {
       url: "/Inside/15.jpg",
-      title: "2023, da série Andalucía, Untitled #4 120x180 mixmedia on linen",
+      ano: "2023",
+      title: "da série Andalucía, Untitled #4",
+      material: "mix media on linen",
+      size: "120x180",
     },
     {
       url: "/Inside/16.jpg",
-      title: "2023, da série Andalucía, Untitled #2 250x90 mixmedia on linen",
+      ano: "2023",
+      title: "da série Andalucía, Untitled #2",
+      material: "mix media on linen",
+      size: "250x90",
     },
     {
       url: "/Inside/17.jpg",
-      title: "2023, da série Andalucía,  Untitled 120x180 mixmedia on linen",
+      ano: "2023",
+      title: "da série Andalucía, Untitled",
+      material: "mix media on linen",
+      size: "120x180",
     },
     {
       url: "/Inside/18.jpg",
-      title: "2023, _Summer_ mix media on canvas, 90x60_",
+      ano: "2023",
+      title: "Summer",
+      material: "mix media on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/19.jpg",
-      title: "2023, _Rehab_ , oil on canvas,  90x60_",
+      ano: "2023",
+      title: "Rehab",
+      material: "óleo on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/20.jpg",
-      title: "2023, _Caterpillar_, oil on canvas, 90x60_",
+      ano: "2023",
+      title: "Caterpillar",
+      material: "óleo on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/21.jpg",
-      title: "2023, _Carnaval_ ,oil on canvas, 90x60_",
+      ano: "2023",
+      title: "Carnaval",
+      material: "óleo on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/22.jpg",
-      title: "2022, de Black and white series, untitled, oil on canvas, 90x60_",
+      ano: "2022",
+      title: "de Black and white series, untitled",
+      material: "óleo on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/23.jpg",
-      title: "2022, de _black and white_ series, Untitled, spray on canvas, 100x100",
+      ano: "2022",
+      title: "de black and white series, Untitled",
+      material: "spray on canvas",
+      size: "100x100",
     },
     {
       url: "/Inside/24.jpg",
-      title: "2022, de _black and white_ series, _Untitled_ acrilic on canvas 120x70_",
+      ano: "2022",
+      title: "de black and white series, Untitled",
+      material: "acrílico on canvas",
+      size: "120x70",
     },
     {
       url: "/Inside/25.jpg",
-      title: "2022, de _black and white_ series Untitled 100x100 spray on canvas",
+      ano: "2022",
+      title: "de black and white series, Untitled",
+      material: "spray on canvas",
+      size: "100x100",
     },
     {
       url: "/Inside/26.jpg",
-      title: "2022, de _black and white_ series _Back to Black_, Untitled oil on canvas 70x50_",
+      ano: "2022",
+      title: "de black and white series, Back to Black, Untitled",
+      material: "óleo on canvas",
+      size: "70x50",
     },
     {
       url: "/Inside/27.jpg",
-      title: "2022, de _black and white_ series , _Titanium_, oil on canvas 70x50_",
+      ano: "2022",
+      title: "de black and white series, Titanium",
+      material: "óleo on canvas",
+      size: "70x50",
     },
     {
       url: "/Inside/28.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #10, acrílics on canvas, 60x40",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #10",
+      material: "acrílico on canvas",
+      size: "60x40",
     },
     {
       url: "/Inside/29.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #9, acrílics on canvas 60x40",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #9",
+      material: "acrílico on canvas",
+      size: "60x40",
     },
     {
       url: "/Inside/30.jpg",
-      title: "2022, da serie _abstrai minha depressão_, untitled #8, mixmedia on canvas, 140x60",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #8",
+      material: "mix media on canvas",
+      size: "140x60",
     },
     {
       url: "/Inside/31.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #7 ,mixmedia on canvas, 70x40",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #7",
+      material: "mix media on canvas",
+      size: "70x40",
     },
     {
       url: "/Inside/32.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #6, mixmedia on canvas, 110x110",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #6",
+      material: "mix media on canvas",
+      size: "110x110",
     },
     {
       url: "/Inside/33.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #5, mix media on canvas, 150x10_",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #5",
+      material: "mix media on canvas",
+      size: "150x100",
     },
     {
       url: "/Inside/34.jpg",
-      title: "2022, da série _abstrai minha depressão_, untitled #4 90x60 mix media on canvas",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #4",
+      material: "mix media on canvas",
+      size: "90x60",
     },
     {
       url: "/Inside/35.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #3, mixmedia on canvas, 90x70",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #3",
+      material: "mix media on canvas",
+      size: "90x70",
     },
     {
       url: "/Inside/36.jpg",
-      title: "2022, da série _abstrai minha depressão_, Untitled #3, mixmedia on canvas, 90x70(1)",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #3",
+      material: "mix media on canvas",
+      size: "90x70",
     },
     {
       url: "/Inside/37.jpg",
-      title: "2022, da série _abstrai minha depressão_, untitled #1, mixmedia on canvas, 90x70",
+      ano: "2022",
+      title: "da série abstrai minha depressão, Untitled #1",
+      material: "mix media on canvas",
+      size: "90x70",
     },
     {
       url: "/Inside/38.jpg",
-      title: "2022 untitled 160x90 mix media on canvas_",
+      ano: "2022",
+      title: "Untitled",
+      material: "mix media on canvas",
+      size: "160x90",
     },
     {
       url: "/Inside/39.jpg",
-      title: "2021. 100x100 mix media _untitled_",
+      ano: "2021",
+      title: "Untitled",
+      material: "mix media",
+      size: "100x100",
     },
     {
       url: "/Inside/40.jpg",
-      title: "2021, de SOUL series, _3333 malas_ mix media on canvas 220x80_",
+      ano: "2021",
+      title: "de SOUL series, 3333 malas",
+      material: "mix media on canvas",
+      size: "220x80",
     },
     {
       url: "/Inside/41.jpg",
-      title: "2021, de _Soul Series_, _alma mala_, acrílics on canvas, 60x60",
+      ano: "2021",
+      title: "de SOUL series, alma mala",
+      material: "acrílico on canvas",
+      size: "60x60",
     },
     {
       url: "/Inside/42.jpg",
-      title: "2021, da série SOUL,  _Untitled_, 100x75 mixmedia on canvas",
+      ano: "2021",
+      title: "da série SOUL, Untitled",
+      material: "mix media on canvas",
+      size: "100x75",
     },
     {
       url: "/Inside/43.jpg",
-      title: "2021 _untitled_ 220x90 mixmedia on canvas",
+      ano: "2021",
+      title: "Untitled",
+      material: "mix media on canvas",
+      size: "220x90",
     },
     {
       url: "/Inside/44.jpg",
-      title: "2021  _Retirantes_, interpretação de Portinari, mix media on canvas 150 x 90_",
+      ano: "2021",
+      title: "Retirantes, interpretação de Portinari",
+      material: "mix media on canvas",
+      size: "150x90",
     },
     {
       url: "/Inside/45.jpg",
-      title: "2020, _Visceral_ mixmedia on canvas 100x40",
+      ano: "2020",
+      title: "Visceral",
+      material: "mix media on canvas",
+      size: "100x40",
     },
     {
       url: "/Inside/46.jpg",
-      title: "2020,  _Retirantes_ re-interpretação de Portinari,  mix media on canvas 200x120",
+      ano: "2020",
+      title: "Retirantes, re-interpretação de Portinari",
+      material: "mix media on canvas",
+      size: "200x120",
     },
     {
       url: "/Inside/47.jpg",
-      title: "2020 _Ready for the fight_ mix media on wood  90x60",
+      ano: "2020",
+      title: "Ready for the fight",
+      material: "mix media on wood",
+      size: "90x60",
     },
   ];
+
+  const filteredImages = selectedYear
+  ? imageUrls.filter((image) => image.ano === selectedYear)
+  : [];
 
   return (
     <>
       <Navbar isProjetosPage={true} />
+
       <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-courier px-4 text-black text-sm">
-        {imageUrls.map((image, index) => (
-          <div
+        <div className="flex justify-center mb-10">
+          <button
+            onClick={() => setSelectedYear("2020")}
+            className="mx-2 py-2 px-4  rounded"
+          >
+            2020
+          </button>
+          <button
+            onClick={() => setSelectedYear("2021")}
+            className="mx-2 py-2 px-4   rounded"
+          >
+            2021
+          </button>
+          <button
+            onClick={() => setSelectedYear("2022")}
+            className="mx-2 py-2 px-4 rounded"
+          >
+            2022
+          </button>
+          <button
+            onClick={() => setSelectedYear("2023")}
+            className="mx-2 py-2 px-4 rounded"
+          >
+            2023
+          </button>
+          <button
+            onClick={() => setSelectedYear("2024")}
+            className="mx-2 py-2 px-4 rounded"
+          >
+            2024
+          </button>
+        
+        </div>
+
+     
+        {filteredImages.length > 0
+          ? filteredImages.map((image, index) => (
+            <div
             key={index}
             className="relative w-full h-96 md:h-[90vh] mb-14 flex flex-col items-center"
           >
@@ -210,9 +400,13 @@ function Inside() {
                 className="object-contain"
               />
             </div>
-            <p className="pt-4 text-center">{image.title || "No Title"}</p>
+            <p className="pt-4 text-center">{image?.ano}</p>
+            <p className="pt-1 text-center">{image?.title}</p>
+            <p className="pt-1 text-center">{image?.material}</p>
+            <p className="pt-1 text-center">{image?.size}</p>
           </div>
-        ))}
+            ))
+          : ""}
       </div>
     </>
   );
