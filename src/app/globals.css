@@ -6,6 +6,10 @@
   font-family: "COURIER";
   src: url("../../public/fonts/CourierPrime-Regular.ttf");
 }
+@font-face {
+  font-family: "REALCOURIER";
+  src: url("../../public/fonts/realCourierPrime.ttf");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

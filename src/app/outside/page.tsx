@@ -244,9 +244,9 @@ function Outside() {
       "project": "futAn"
     },
     {
-      "url": "/Outside/futEs/1.jpg",
+      "url": "/Outside/futAn/5.jpg",
       "title": "",
-      "project": "futEs"
+      "project": "futAn"
     },
     {
       "url": "/Outside/covid/1.jpg",
@@ -432,20 +432,15 @@ function Outside() {
             onClick={() => setSelectedProject("man")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2024. Performance Man don_t cry_ , Malaga
+            2024. Performance Man don't cry?, Malaga
           </button>
           <button
             onClick={() => setSelectedProject("futAn")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2024. _Futuro Ancestral_
+            2024. Futuro Ancestral
           </button>
-          <button
-            onClick={() => setSelectedProject("futEs")}
-            className="mx-2 py-2 px-4 rounded"
-          >
-            2023. _El futuro es ancestral_
-          </button>
+
           <button
             onClick={() => setSelectedProject("covid")}
             className="mx-2 py-2 px-4 rounded"

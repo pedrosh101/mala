@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
 
   return (
     <div
-      className={`flex w-full font-courier place-content-end text-sm p-4 sm:p-8 pb-8 z-50 ${
+      className={`flex w-full font-realCourier place-content-end text-sm p-4 sm:p-8 pb-8 z-50 ${
         isProjetosPage ? "bg-slate-50 text-black hover:text-slate-700" : "text-white hover:text-red-50"
       }`}
     >
@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
             <p>Outside</p>
           </Link>
           <a  href="/portfolio.pdf" download>
-            Malaismo Portfólio
+          Painting Portfólio
           </a>
           <a  href="/portfolio.pdf" download>
             Portfólio Completo
@@ -121,7 +121,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
             <p className="hover:text-red-50">Outside</p>
           </Link>
           <a className="hover:text-red-50" href="/portfolio.pdf" download>
-            Malaismo Portfólio
+          Painting Portfólio
           </a>
           <a className="hover:text-red-50" href="/portfolio.pdf" download>
             Portfólio Completo

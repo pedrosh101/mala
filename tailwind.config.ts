@@ -15,7 +15,8 @@ const config: Config = {
           
       },
       fontFamily:{
-        courier: ["COURIER"]
+        courier: ["COURIER"],
+        realCourier : ["REALCOURIER"]
       }
     },
   },
