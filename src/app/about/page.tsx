@@ -82,7 +82,7 @@ function About() {
           <h1>
             Explora e pesquisa as possibilidades da Performance, tendo realizada
             algumas em solo europeu, como COVID 19, no final da Pandemia em
-            Faro, PT, e &quot;Mans don't cry&quot; em Málaga, no sul da Espanha.
+            Faro, PT, e &quot;Mans don&rsquo;t cry&quot; em Málaga, no sul da Espanha.
           </h1>
           <h1>
             No Cinema, sua janela de entrada na sétima arte foi a atuação e,
@@ -98,7 +98,7 @@ function About() {
             estudou com o mestre do Som e da Montagem cinematográfica Waldir
             Xavier. Logo em seguida especializou-se em Montagem na EICTV, em
             Cuba. Posteriormente estudou produção musical na AIMEC, em Campinas,
-            no interior de São Paulo.{" "}
+            no interior de São Paulo.
           </h1>
           <div className="indent-0 space-y-8 pt-16">
             <h1>CV</h1>
