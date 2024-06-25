@@ -432,7 +432,7 @@ function Outside() {
             onClick={() => setSelectedProject("man")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2024. Performance Man don't cry?, Malaga
+            2024. Performance Man don&rsquo;t cry?, Malaga
           </button>
           <button
             onClick={() => setSelectedProject("futAn")}
