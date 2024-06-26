@@ -90,14 +90,14 @@ function About() {
           <h1>
             Matheus Malavazi atuou nos palcos e nos sets de filmagem nos 10 anos
             que antecederam a Pandemia. Fez teatro nos palcos e principalmente
-            nas ruas Cariocas, integrando o grupo "TáNaRua", do grande mestre
+            nas ruas Cariocas, integrando o grupo &quot;TáNaRua&quot;, do grande mestre
             Amir Hadad. Participou de curtas e longas metragens, web series,
             participações na televisão e publicidade.
           </h1>
           <h1>
             Explora e pesquisa as possibilidades da Performance, tendo realizada
             algumas em solo europeu, como COVID 19, no final da Pandemia em
-            Faro, PT, e "Mans don’t cry" em Málaga, no sul da Espanha.
+            Faro, PT, e &quot;Mans don&rsquo;t cry&quot; em Málaga, no sul da Espanha.
           </h1>
           <h1>
             No Cinema, sua janela de entrada na sétima arte foi a atuação e,
