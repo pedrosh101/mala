@@ -87,7 +87,12 @@ function Outside() {
                 </a>
               </div>
             ))
-          : ""}
+          : 
+          <div className="flex justify-center text-4xl">
+
+            <h1>Vídeo aqui?</h1>
+          </div>
+          }
       </div>
     </>
   );
