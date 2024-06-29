@@ -34,7 +34,7 @@ function Inside() {
     <>
       <Navbar isProjetosPage={true} />
 
-      <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-courier px-4 text-black text-sm">
+      <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-RealCourier px-4 text-black text-sm">
         <div className="flex justify-center mb-10">
           {["2024", "23", "22", "21", "20"].map((year) => (
             <button
@@ -51,7 +51,7 @@ function Inside() {
           ? filteredImages.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full h-96 md:min-h-screen mb-14 flex flex-col items-center"
+                className="relative w-full h-[40em] md:min-h-screen mb-14 flex flex-col items-center leading-4"
               >
                 <div
                   className={`relative w-full h-full ${

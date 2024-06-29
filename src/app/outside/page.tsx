@@ -3,7 +3,11 @@
 import { useState } from "react";
 import Navbar from "@/app/components/navbar";
 import { imageUrls } from "@/app/data/outside";
+import Video from "next-video";
 import Image from "next/image";
+
+
+import video1 from "/videos/video1.mp4";
 
 function Outside() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -68,31 +72,34 @@ function Outside() {
           </button>
         </div>
 
-        {filteredImages.length > 0
-          ? filteredImages.map((image, index) => (
-              <div
-                key={index}
-                className="relative w-full h-96 md:h-[90vh] mb-14 flex flex-col items-center"
-              >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={image.url}
-                    alt={image.title || `Image ${index + 1}`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <a className="pt-1 text-center" href={image?.dl} download>
-                  {image?.title}
-                </a>
+        {filteredImages.length > 0 ? (
+          filteredImages.map((image, index) => (
+            <div
+              key={index}
+              className="relative w-full h-96 md:h-[90vh] mb-14 flex flex-col items-center"
+            >
+              <div className="relative w-full h-full">
+                <Image
+                  src={image.url}
+                  alt={image.title || `Image ${index + 1}`}
+                  fill
+                  className="object-contain"
+                />
               </div>
-            ))
-          : 
+              <a className="pt-1 text-center" href={image?.dl} download>
+                {image?.title}
+              </a>
+            </div>
+          ))
+        ) : (
           <div className="flex justify-center text-4xl">
-
-            <h1>Vídeo aqui?</h1>
+            <Video
+              src={video1}
+              style={{ maxWidth: "42rem" }}
+              accentColor="black"
+            />
           </div>
-          }
+        )}
       </div>
     </>
   );
