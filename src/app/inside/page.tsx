@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 function Inside() {
-  const [selectedYear, setSelectedYear] = useState<string | null>(null);
+  const [selectedYear, setSelectedYear] = useState<string | null>("2024");
   const filteredImages = selectedYear
     ? imageUrls.filter((image) => image.ano === selectedYear)
     : [];
@@ -51,10 +51,10 @@ function Inside() {
           ? filteredImages.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full h-[40em] md:min-h-screen mb-14 flex flex-col items-center leading-4"
+                className="relative w-full h-[40em] min-h-screen mb-14 flex flex-col  leading-4"
               >
                 <div
-                  className={`relative w-full h-full ${
+                  className={`relative w-full md:h-full h-96 ${
                     image.macros ? "cursor-pointer" : "cursor-default"
                   }`}
                   onClick={() =>
@@ -67,15 +67,18 @@ function Inside() {
                     src={image.url}
                     alt={image.title || `Image ${index + 1}`}
                     fill
-                    className="object-contain"
+                    className="object-contain md:h-96"
                   />
                 </div>
-                <p className="pt-4 text-center">{image?.ano}</p>
-                <a className="pt-1 text-center" href={image?.dl} download>
-                  {image?.title}
-                </a>
-                <p className="pt-1 text-center">{image?.material}</p>
-                <p className="pt-1 text-center">{image?.size}</p>
+                <div>
+                  <p className="pt-4 text-center">{image?.ano}</p>
+                  <a className="pt-1 text-center" href={image?.dl} download>
+                    <p className="pt-1">{image?.title}</p>
+                    
+                  </a>
+                  <p className="pt-1 text-center">{image?.material}</p>
+                  <p className="pt-1 text-center">{image?.size}</p>
+                </div>
               </div>
             ))
           : ""}

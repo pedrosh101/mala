@@ -76,14 +76,14 @@ function Outside() {
           filteredImages.map((image, index) => (
             <div
               key={index}
-              className="relative w-full h-96 md:h-[90vh] mb-14 flex flex-col items-center"
+              className="relative w-full h-[40em] min-h-screen mb-14 flex flex-col items-center"
             >
-              <div className="relative w-full h-full">
+              <div className="relative w-full md:h-full h-96">
                 <Image
                   src={image.url}
                   alt={image.title || `Image ${index + 1}`}
                   fill
-                  className="object-contain"
+                  className="object-contain md:h-96"
                 />
               </div>
               <a className="pt-1 text-center" href={image?.dl} download>
