@@ -4,8 +4,8 @@ function About() {
   return (
     <>
       <Navbar isProjetosPage={true} />
-      <div className="flex w-full justify-center space-x-8 font-courier bg-slate-50">
-        <div className="mt-10 sm:mt-20 md:w-2/6 md:px-0 px-2 mb-20 text-black indent-8 space-y-8">
+      <div className="flex w-full justify-center space-x-8 font-realCourier bg-slate-50">
+        <div className="mt-10 sm:mt-20 md:w-1/2 md:px-0 px-6 mb-20 text-black indent-8 space-y-8">
           <h1>
             Matheus Malavazi, 1993, vulgo Mala, multi artista nascido no
             interior de São Paulo, mudou-se ainda jovem para o Rio de Janeiro,

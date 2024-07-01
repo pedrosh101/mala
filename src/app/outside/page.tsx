@@ -19,7 +19,7 @@ function Outside() {
   return (
     <>
       <Navbar isProjetosPage={true} />
-      <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-courier px-4 text-black text-sm">
+      <div className="flex flex-col bg-slate-50 md:min-h-screen min-h-[80vh] py-10 font-realCourier px-4 text-black text-sm">
         <div className="flex flex-col mb-10">
           <button
             onClick={() => setSelectedProject("wall")}

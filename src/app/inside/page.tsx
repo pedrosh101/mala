@@ -51,7 +51,7 @@ function Inside() {
           ? filteredImages.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full h-[40em] min-h-screen mb-14 flex flex-col  leading-4"
+                className="relative w-full h-[40em] md:min-h-screen min-h-[80vh] mb-14 flex flex-col  leading-4"
               >
                 <div
                   className={`relative w-full md:h-full h-96 ${
