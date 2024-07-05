@@ -171,7 +171,7 @@ function About() {
                 lives and works between his studio in Faro, Algarve, and Brazil.
               </h1>
               <h1>
-                Mala's journey in painting reflects the multiple experiences and
+                Mala&rsquo;s journey in painting reflects the multiple experiences and
                 influences he has collected over time. His works are a symphony
                 of varied techniques, diverse materials, and a color palette
                 that transcends the conventional.
