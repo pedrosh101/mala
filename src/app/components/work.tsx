@@ -22,7 +22,7 @@ function Work({ imageUrls }: any) {
   };
 
   return (
-    <main className="flex flex-col items-center min-h-screen bg-no-repeat bg-top text-white bg-black">
+    <main className="flex flex-col items-center min-h-screen bg-no-repeat bg-top text-black bg-white">
       <div className="grid md:grid-cols-3 gap-4 p-4 w-full">
         {imageUrls.map((image: { url: string; title: string }, index: number) => (
           <div key={index} className="relative min-h-[500px] w-full">
@@ -38,7 +38,7 @@ function Work({ imageUrls }: any) {
         ))}
       </div>
       {modalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-50">
           <div className="bg-white/20 p-2 rounded-lg h-[90%] w-[90%]">
             <div className="flex w-full justify-end">
               <svg
