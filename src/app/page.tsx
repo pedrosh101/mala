@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === 13 ? 0 : prevImage + 1));
+      setCurrentImage((prevImage) => (prevImage === 20 ? 0 : prevImage + 1));
     }, 6000);
     return () => clearInterval(intervalId);
   }, []);
