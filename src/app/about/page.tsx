@@ -15,11 +15,8 @@ function About() {
       <Navbar isProjetosPage={true} />
       <div className="flex w-full justify-center space-x-8 font-realCourier bg-slate-50">
         <div className="mt-10 sm:mt-20 md:w-1/2 md:px-0 px-6 mb-20 text-black indent-8 space-y-8">
-          <button
-            onClick={toggleLanguage}
-            className="flex justify-end w-full "
-          >
-            {language === "pt" ? "En/Pt" : "Pt/En"}
+          <button onClick={toggleLanguage} className="flex justify-end w-full ">
+            {language === "pt" ? "Pt/En" : "En/Pt"}
           </button>
           {language === "pt" ? (
             <>
@@ -54,20 +51,21 @@ function About() {
                 de significado que variam de acordo com a perspectiva
                 individual. Seu processo criativo é muitas vezes um ato de
                 abstração total, onde o gesto e a automatização desempenham
-                papéis centrais. &quot;Pintar sem pensar&quot; onde a repetição e a
-                automação formam uma espécie de mantra, em seu estúdio canaliza
-                a energia da rua e deposita nas telas, através dos caps e
-                pincéis, criando uma linguagem particular e um estilo próprio.
+                papéis centrais. &quot;Pintar sem pensar&quot; onde a repetição
+                e a automação formam uma espécie de mantra, em seu estúdio
+                canaliza a energia da rua e deposita nas telas, através dos caps
+                e pincéis, criando uma linguagem particular e um estilo próprio.
               </h1>
               <h1>
-                Os &quot;Cogumelos babilônicos&quot; (ou &quot;Cogumalas&quot; em português e
-                &quot;Mushuroomala&quot; em inglês), que são seu trabalho figurativo, são
-                personagens que nasceram em paredes das ruas brasileiras e, com
-                o confinamento da pandemia, passaram também para as telas. Assim
-                como em seus trabalhos abstratos, usa uma vasta paleta de cores,
-                diferentes materiais em superfícies variadas. Os &quot;Cogumalas&quot; se
-                relacionam bastante com a estética da Pop-Art através das formas
-                e das cores. Esses seres, apesar da aparência amigável, carregam
+                Os &quot;Cogumelos babilônicos&quot; (ou &quot;Cogumalas&quot;
+                em português e &quot;Mushuroomala&quot; em inglês), que são seu
+                trabalho figurativo, são personagens que nasceram em paredes das
+                ruas brasileiras e, com o confinamento da pandemia, passaram
+                também para as telas. Assim como em seus trabalhos abstratos,
+                usa uma vasta paleta de cores, diferentes materiais em
+                superfícies variadas. Os &quot;Cogumalas&quot; se relacionam
+                bastante com a estética da Pop-Art através das formas e das
+                cores. Esses seres, apesar da aparência amigável, carregam
                 sempre consigo uma mensagem filosófica, existencial, psicológica
                 e quase sempre uma crítica social em seu conteúdo.
               </h1>
@@ -75,8 +73,15 @@ function About() {
                 Sua prática/pesquisa artística vai muito além da Pintura.
                 Matheus Malavazi atuou nos palcos e nos sets de filmagem nos 10
                 anos que antecederam a Pandemia. Fez teatro nos palcos e nas
-                ruas Cariocas, integrando o grupo &quot;TáNaRua&quot;, do mestre Amir
-                Hadad.
+                ruas Cariocas, integrando o grupo{" "}
+                <a
+                  href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &quot;TáNaRua&quot;
+                </a>
+                , do mestre Amir Hadad.
               </h1>
               <h1>
                 No Cinema, sua janela de entrada na sétima arte foi a atuação.
@@ -92,9 +97,9 @@ function About() {
               </h1>
               <h1>
                 Explora e pesquisa também as possibilidades da Performance como
-                em &quot;COVID 19&quot;, realizada no final da Pandemia em Faro, Algarve,
-                Portugal e &quot;Mans don&rsquo;t cry?&quot;, no sul da Andaluzia, em Málaga na
-                Espanha.
+                em &quot;COVID 19&quot;, realizada no final da Pandemia em Faro,
+                Algarve, Portugal e &quot;Mans don&rsquo;t cry?&quot;, no sul da
+                Andaluzia, em Málaga na Espanha.
               </h1>
               <div className="indent-0 space-y-8 pt-16">
                 <h1>CV</h1>
@@ -147,7 +152,7 @@ function About() {
                   <br />
                   Galeria Arquente, Faro, PT.
                   <br />
-                  Curadoria: Guilherme Gonçalves
+                  Curadoria: Guilherme Gon
                 </h1>
               </div>
             </>
@@ -171,10 +176,10 @@ function About() {
                 lives and works between his studio in Faro, Algarve, and Brazil.
               </h1>
               <h1>
-                Mala&rsquo;s journey in painting reflects the multiple experiences and
-                influences he has collected over time. His works are a symphony
-                of varied techniques, diverse materials, and a color palette
-                that transcends the conventional.
+                Mala&rsquo;s journey in painting reflects the multiple
+                experiences and influences he has collected over time. His works
+                are a symphony of varied techniques, diverse materials, and a
+                color palette that transcends the conventional.
               </h1>
               <h1>
                 Each brushstroke is a fusion of references from places he has
@@ -215,10 +220,11 @@ function About() {
                 that.
               </h1>
               <h1>
-                The &quot;Babylonian Mushrooms&quot; (or &quot;Cogumalas&quot; in Portuguese and
-                &quot;Mushuroomala&quot; in English) are his most figurative work. They
-                are characters that were born on the walls of Brazilian streets
-                and, with the confinement of the pandemic, moved to canvases.
+                The &quot;Babylonian Mushrooms&quot; (or &quot;Cogumalas&quot;
+                in Portuguese and &quot;Mushuroomala&quot; in English) are his
+                most figurative work. They are characters that were born on the
+                walls of Brazilian streets and, with the confinement of the
+                pandemic, moved to canvases.
               </h1>
               <h1>
                 Just like in his abstract canvases, he heavily uses a wide
@@ -236,16 +242,23 @@ function About() {
               <h1>
                 Matheus Malavazi worked on stages and film sets in the 10 years
                 leading up to the pandemic. He performed in theaters and mainly
-                on the streets of Rio de Janeiro, integrating the group
-                &quot;TáNaRua,&quot; led by the great master Amir Haddad. He participated
-                in short and feature films, web series, television appearances,
-                and commercials.
+                on the streets of Rio de Janeiro, integrating the group{" "}
+                <a
+                  href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &quot;TáNaRua&quot;
+                </a>{" "}
+                led by the great master Amir Haddad. He participated in short
+                and feature films, web series, television appearances, and
+                commercials.
               </h1>
               <h1>
                 He explores and researches the possibilities of Performance,
-                having performed some in Europe, such as &quot;COVID 19&quot; at the end
-                of the pandemic in Faro, PT, and &quot;Mans don&rsquo;t cry&quot; in Málaga,
-                southern Spain.
+                having performed some in Europe, such as &quot;COVID 19&quot; at
+                the end of the pandemic in Faro, PT, and &quot;Mans don&rsquo;t
+                cry&quot; in Málaga, southern Spain.
               </h1>
               <h1>
                 In Cinema, his gateway to the seventh art was acting, and after
@@ -311,7 +324,7 @@ function About() {
                   <br />
                   Arquente Gallery, Faro, PT.
                   <br />
-                  Curation: Guilherme Gonçalves
+                  Curation: Guilherme Gon
                 </h1>
               </div>
             </>
