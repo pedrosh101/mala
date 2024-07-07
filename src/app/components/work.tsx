@@ -39,7 +39,7 @@ function Work({ imageUrls }: any) {
       </div>
       {modalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-50">
-          <div className="bg-white/20 p-2 rounded-lg h-[90%] w-[90%]">
+          <div className="bg-white/80 p-2 rounded-lg h-[100%] w-[90%]">
             <div className="flex w-full justify-end">
               <svg
                 onClick={closeModal}
@@ -47,7 +47,7 @@ function Work({ imageUrls }: any) {
                 fill="currentColor"
                 height="1.6em"
                 width="1.6em"
-                className="bg-red-600 rounded cursor-pointer"
+                className="rounded cursor-pointer"
               >
                 <path
                   fill="red-200"
@@ -67,7 +67,7 @@ function Work({ imageUrls }: any) {
               pagination={{ clickable: true }}
               modules={[Navigation, Pagination]}
             >
-              {imageUrls.map((image: { url: string; title: string }, index: number) => (
+              {imageUrls.map((image: { url: string; title: string, description: string, size: string }, index: number) => (
                 <SwiperSlide key={index}>
                   <div className="relative w-full my-2 h-[80vh]">
                     <Image
@@ -77,8 +77,10 @@ function Work({ imageUrls }: any) {
                       alt={image.title}
                     />
                   </div>
-                  <div className="flex w-full justify-center mb-8">
+                  <div className="flex flex-col w-full justify-center mb-8">
                     <h1>{image.title}</h1>
+                    <h1>{image.description}</h1>
+                    <h1>{image.size}</h1>
                   </div>
                 </SwiperSlide>
               ))}

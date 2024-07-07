@@ -19,7 +19,7 @@ function About() {
             onClick={toggleLanguage}
             className="flex justify-end w-full "
           >
-            {language === "pt" ? "Switch to English" : "Mudar para Português"}
+            {language === "pt" ? "En/Pt" : "Pt/En"}
           </button>
           {language === "pt" ? (
             <>

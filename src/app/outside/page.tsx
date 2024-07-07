@@ -1,16 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/app/components/navbar";
 import { imageUrls } from "@/app/data/outside";
-import Video from "next-video";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 
-
-import video1 from "/videos/video1.mp4";
+// Use dynamic import to load ReactPlayer only on the client
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 function Outside() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Set to true when the component is rendered on the client
+  }, []);
 
   const filteredImages = selectedProject
     ? imageUrls.filter((image) => image.project === selectedProject)
@@ -93,11 +98,15 @@ function Outside() {
           ))
         ) : (
           <div className="flex justify-center text-4xl">
-            <Video
-              src={video1}
-              style={{ maxWidth: "42rem" }}
-              accentColor="black"
+            {isClient && (
+              <ReactPlayer
+              url="https://www.youtube.com/watch?v=RDx1fHqZhps"
+              width="100%"
+              height="26rem"
+              style={{ maxWidth: "42rem"}}
+              controls
             />
+            )}
           </div>
         )}
       </div>
