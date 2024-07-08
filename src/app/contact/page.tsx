@@ -29,9 +29,9 @@ function Contato() {
             </a>
           </div>
           <div>
-            <h1>YouTube:</h1>
+            <h1>You Tube:</h1>
             <a
-              href="https://instagram.com/art.of.mala"
+              href="https://www.youtube.com/@oficialMala"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-slate-800"
