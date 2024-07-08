@@ -14,10 +14,12 @@ function About() {
     <>
       <Navbar isProjetosPage={true} />
       <div className="flex w-full justify-center space-x-8 font-realCourier bg-slate-50">
-        <div className="mt-10 sm:mt-20 md:w-1/2 md:px-0 px-6 mb-20 text-black indent-8 space-y-8">
-          <button onClick={toggleLanguage} className="flex justify-end w-full ">
-            {language === "pt" ? "Pt/En" : "En/Pt"}
-          </button>
+        <div className="mt-10 sm:mt-20 md:w-4/5 md:px-0 px-6 mb-20 text-black indent-8 space-y-8">
+          <div className="flex justify-end w-full">
+            <button onClick={toggleLanguage} className="w-fit">
+              {language === "pt" ? "Pt/En" : "En/Pt"}
+            </button>
+          </div>
           {language === "pt" ? (
             <>
               <h1>
@@ -57,13 +59,20 @@ function About() {
                 e pincéis, criando uma linguagem particular e um estilo próprio.
               </h1>
               <h1>
-                Os &quot;Cogumelos babilônicos&quot; (ou &quot;Cogumalas&quot;
-                em português e &quot;Mushuroomala&quot; em inglês), que são seu
-                trabalho figurativo, são personagens que nasceram em paredes das
-                ruas brasileiras e, com o confinamento da pandemia, passaram
-                também para as telas. Assim como em seus trabalhos abstratos,
-                usa uma vasta paleta de cores, diferentes materiais em
-                superfícies variadas. Os &quot;Cogumalas&quot; se relacionam
+                Os{" "}
+                <a
+                  href="https://www.instagram.com/cogumala?igsh=MWJqb29pcDNrZjM3Mg%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;Cogumelos Babilônicos&quot;
+                </a>{" "}
+                são seu trabalho figurativo, são personagens que nasceram em
+                paredes das ruas brasileiras e, com o confinamento da pandemia,
+                passaram também para as telas. Assim como em seus trabalhos
+                abstratos, usa uma vasta paleta de cores, diferentes materiais
+                em superfícies variadas. Os &quot;Cogumalas&quot; se relacionam
                 bastante com a estética da Pop-Art através das formas e das
                 cores. Esses seres, apesar da aparência amigável, carregam
                 sempre consigo uma mensagem filosófica, existencial, psicológica
@@ -78,6 +87,7 @@ function About() {
                   href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:text-slate-800"
                 >
                   &quot;TáNaRua&quot;
                 </a>
@@ -87,19 +97,43 @@ function About() {
                 No Cinema, sua janela de entrada na sétima arte foi a atuação.
                 Formou-se em Direção Cinematográfica pela Academia Internacional
                 de Cinema (AIC) no Rio de Janeiro onde realizou seu primeiro
-                filme, Sonho de Fumaça, em que além de produzir e co-dirigir com
-                Nayara Costa, atuou, editou, montou e fez o desenho de som.
-                Posteriormente estudou Montagem na EICTV, em Cuba e, depois de
-                esculpir a Imagem (parafraseando Tarkovski), também quis
-                esculpir o Som, estudando produção musical na Academia
-                Internacional de Música Eletrônica (AIMEC), em Campinas/SP, onde
-                nasceu.
+                filme,{" "}
+                <a
+                  href="https://vimeo.com/215559046"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  Sonho de Fumaça
+                </a>
+                , em que além de produzir e co-dirigir com Nayara Costa, atuou,
+                editou, montou e fez o desenho de som. Posteriormente estudou
+                Montagem na EICTV, em Cuba e, depois de esculpir a Imagem
+                (parafraseando Tarkovski), também quis esculpir o Som, estudando
+                produção musical na Academia Internacional de Música Eletrônica
+                (AIMEC), em Campinas/SP, onde nasceu.
               </h1>
               <h1>
                 Explora e pesquisa também as possibilidades da Performance como
-                em &quot;COVID 19&quot;, realizada no final da Pandemia em Faro,
-                Algarve, Portugal e &quot;Mans don&rsquo;t cry?&quot;, no sul da
-                Andaluzia, em Málaga na Espanha.
+                em{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;COVID 19&quot;
+                </a>
+                , realizada no final da Pandemia em Faro, Algarve, Portugal e{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;Mans don&rsquo;t cry?&quot;
+                </a>
+                , no sul da Andaluzia, em Málaga na Espanha.
               </h1>
               <div className="indent-0 space-y-8 pt-16">
                 <h1>CV</h1>
@@ -220,11 +254,18 @@ function About() {
                 that.
               </h1>
               <h1>
-                The &quot;Babylonian Mushrooms&quot; (or &quot;Cogumalas&quot;
-                in Portuguese and &quot;Mushuroomala&quot; in English) are his
-                most figurative work. They are characters that were born on the
-                walls of Brazilian streets and, with the confinement of the
-                pandemic, moved to canvases.
+                The{" "}
+                <a
+                  href="https://www.instagram.com/cogumala?igsh=MWJqb29pcDNrZjM3Mg%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;Babylonian Mushrooms&quot;
+                </a>{" "}
+                are his most figurative work. They are characters that were born
+                on the walls of Brazilian streets and, with the confinement of
+                the pandemic, moved to canvases.
               </h1>
               <h1>
                 Just like in his abstract canvases, he heavily uses a wide
@@ -247,6 +288,7 @@ function About() {
                   href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:text-slate-800"
                 >
                   &quot;TáNaRua&quot;
                 </a>{" "}
@@ -256,9 +298,25 @@ function About() {
               </h1>
               <h1>
                 He explores and researches the possibilities of Performance,
-                having performed some in Europe, such as &quot;COVID 19&quot; at
-                the end of the pandemic in Faro, PT, and &quot;Mans don&rsquo;t
-                cry&quot; in Málaga, southern Spain.
+                having performed some in Europe, such as{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;COVID 19&quot;
+                </a>{" "}
+                at the end of the pandemic in Faro, PT, and{" "}
+                <a
+                  href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-slate-800"
+                >
+                  &quot;Mans don&rsquo;t cry?&quot;
+                </a>{" "}
+                in Málaga, southern Spain.
               </h1>
               <h1>
                 In Cinema, his gateway to the seventh art was acting, and after

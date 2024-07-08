@@ -67,12 +67,9 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           </svg>
         </div>
         {/* Horizontal menu for desktop */}
-        <div className="hidden sm:flex space-x-8 pt-3 h-fit">
+        <div className="hidden sm:flex space-x-8 pt-3 h-fit w-fit">
           <Link href="/about">
-            <p>About</p>
-          </Link>
-          <Link href="/available-works">
-            <p>Available Works</p>
+            <p>About Bio CV</p>
           </Link>
           <Link href="/inside">
             <p>Inside</p>
@@ -80,9 +77,12 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           <Link href="/outside">
             <p>Outside</p>
           </Link>
-          <a href="/portfolio.pdf" download>
-            Portfólio
-          </a>
+          <Link href="/available-works">
+            <p>Available Works</p>
+          </Link>
+          <Link href="/contact">
+            <p>Contact</p>
+          </Link>
         </div>
       </div>
       {/* Overlay for mobile */}
@@ -108,10 +108,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
             <p className="pb-8 sm:hidden text-base">Home</p>
           </Link>
           <Link href="/about">
-            <p className="hover:text-red-50">About</p>
-          </Link>
-          <Link href="/available-works">
-            <p className="hover:text-red-50">Available Works</p>
+            <p className="hover:text-red-50">About Bio CV</p>
           </Link>
           <Link href="/inside">
             <p className="hover:text-red-50">Inside</p>
@@ -119,9 +116,12 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           <Link href="/outside">
             <p className="hover:text-red-50">Outside</p>
           </Link>
-          <a className="hover:text-red-50" href="/portfolio.pdf" download>
-            Portfólio
-          </a>
+          <Link href="/available-works">
+            <p className="hover:text-red-50">Available Works</p>
+          </Link>
+          <Link href="/contact">
+            <p className="hover:text-red-50">Contact</p>
+          </Link>
         </div>
       </div>
     </div>

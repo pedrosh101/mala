@@ -35,17 +35,26 @@ function Inside() {
       <Navbar isProjetosPage={true} />
 
       <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-RealCourier px-4 text-black text-sm">
-        <div className="flex justify-center mb-10">
-          {["2024", "23", "22", "21", "20"].map((year) => (
-            <button
-              key={year}
-              onClick={() => setSelectedYear(year)}
-              className="mx-2 py-2 px-4 rounded"
-            >
-              {year}
-            </button>
-          ))}
-        </div>
+        {!isModalOpen && (
+          <div className="sticky top-10 z-10 flex md:justify-end justify-center mb-10">
+            <div>
+              {["2024", "23", "22", "21", "20"].map((year) => (
+                <button
+                  key={year}
+                  onClick={() => setSelectedYear(year)}
+                  className="mx-2 py-2 px-2 hover:text-slate-800"
+                >
+                  {year}
+                </button>
+              ))}
+              <div className="mx-2 pt-2 px-4 flex justify-end hover:text-slate-800">
+                <a href="/portfolio.pdf" download>
+                  Portfólio Download
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
 
         {filteredImages.length > 0
           ? filteredImages.map((image, index) => (
@@ -74,7 +83,6 @@ function Inside() {
                   <p className="pt-4 text-center">{image?.ano}</p>
                   <a className="pt-1 text-center" href={image?.dl} download>
                     <p className="pt-1">{image?.title}</p>
-                    
                   </a>
                   <p className="pt-1 text-center">{image?.material}</p>
                   <p className="pt-1 text-center">{image?.size}</p>
