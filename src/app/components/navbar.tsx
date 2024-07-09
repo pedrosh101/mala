@@ -105,16 +105,16 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           </button>
 
           <Link href="/">
-            <p className="pb-8 sm:hidden text-base">Home</p>
+            <p className="pb-16 sm:hidden text-base">Home</p>
           </Link>
           <Link href="/about">
-            <p className="hover:text-red-50">About Bio CV</p>
+            <p className="hover:text-red-50 pb-8">About Bio CV</p>
           </Link>
           <Link href="/inside">
             <p className="hover:text-red-50">Inside</p>
           </Link>
           <Link href="/outside">
-            <p className="hover:text-red-50">Outside</p>
+            <p className="hover:text-red-50 pb-8">Outside</p>
           </Link>
           <Link href="/available-works">
             <p className="hover:text-red-50">Available Works</p>

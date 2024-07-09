@@ -24,7 +24,7 @@ function Outside() {
   return (
     <>
       <Navbar isProjetosPage={true} />
-      <div className="flex flex-col bg-slate-50 md:min-h-screen min-h-[80vh] py-10 font-realCourier px-4 text-black text-sm">
+      <div className="flex flex-col bg-slate-50 min-h-screen  py-10 font-realCourier px-4 text-black text-sm">
         <div className="flex flex-col mb-10">
           <button
             onClick={() => setSelectedProject("wall")}
@@ -55,25 +55,25 @@ function Outside() {
             onClick={() => setSelectedProject("covid")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2021, performance COVID19, Faro
+            2021. performance COVID19, Faro
           </button>
           <button
             onClick={() => setSelectedProject("lilas")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2020, Hospedaria lilás, Chapada Diamantina
+            2020. Hospedaria lilás, Chapada Diamantina
           </button>
           <button
             onClick={() => setSelectedProject("sergipe")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2020 - Somewhere in Sergipe
+            2020. Somewhere in Sergipe
           </button>
           <button
             onClick={() => setSelectedProject("vida")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2020, Pousada Vidavibra, Itamambuca
+            2020. Pousada Vidavibra, Itamambuca
           </button>
         </div>
 
