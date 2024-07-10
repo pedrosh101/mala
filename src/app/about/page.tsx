@@ -64,7 +64,7 @@ function About() {
                   href="https://www.instagram.com/cogumala?igsh=MWJqb29pcDNrZjM3Mg%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;Cogumelos Babilônicos&quot;
                 </a>{" "}
@@ -87,7 +87,7 @@ function About() {
                   href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;TáNaRua&quot;
                 </a>
@@ -102,7 +102,7 @@ function About() {
                   href="https://vimeo.com/215559046"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   Sonho de Fumaça
                 </a>
@@ -120,7 +120,7 @@ function About() {
                   href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;COVID 19&quot;
                 </a>
@@ -129,7 +129,7 @@ function About() {
                   href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;Mans don&rsquo;t cry?&quot;
                 </a>
@@ -259,7 +259,7 @@ function About() {
                   href="https://www.instagram.com/cogumala?igsh=MWJqb29pcDNrZjM3Mg%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;Babylonian Mushrooms&quot;
                 </a>{" "}
@@ -288,7 +288,7 @@ function About() {
                   href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;TáNaRua&quot;
                 </a>{" "}
@@ -303,7 +303,7 @@ function About() {
                   href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;COVID 19&quot;
                 </a>{" "}
@@ -312,7 +312,7 @@ function About() {
                   href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-slate-800"
+                  className="hover:text-slate-800 bg-stone-200"
                 >
                   &quot;Mans don&rsquo;t cry?&quot;
                 </a>{" "}
