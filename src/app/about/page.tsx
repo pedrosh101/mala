@@ -111,7 +111,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "TáNaRua"
+                  &quot;TáNaRua&quot;
                 </a>
                 , do mestre Amir Hadad.
               </h1>
@@ -124,7 +124,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "COVID 19"
+                  &quot;COVID 19&quot;
                 </a>
                 , realizada no final da Pandemia em Faro, Algarve, Portugal e{" "}
                 <a
@@ -133,7 +133,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "Mans don’t cry?"
+                  &quot;Mans don&rsquo;t cry?&quot;
                 </a>
                 , no sul da Andaluzia, em Málaga na Espanha.
               </h1>
@@ -219,7 +219,7 @@ function About() {
             </>
           ) : (
             <>
-                          <div className="relative w-full h-[35rem]">
+              <div className="relative w-full h-[35rem]">
                 <Image
                   src={Image1}
                   alt="image1"
@@ -245,10 +245,10 @@ function About() {
                 works between his studio in Faro, Algarve, and Brazil.
               </h1>
               <h1>
-                Mala's journey in painting reflects the multiple experiences and
-                influences he has gathered over time. His works are a symphony
-                of varied techniques, diverse materials, and a color palette
-                that transcends the conventional.
+                Mala&rsquo;s journey in painting reflects the multiple
+                experiences and influences he has gathered over time. His works
+                are a symphony of varied techniques, diverse materials, and a
+                color palette that transcends the conventional.
               </h1>
               <h1>
                 Each brushstroke is a fusion of references from places he has
@@ -282,7 +282,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "Babylonian Mushrooms"
+                  &quot;Babylonian Mushrooms&quot;
                 </a>{" "}
                 are characters that originated on the walls of Brazilian streets
                 and, during the pandemic lockdown, also transitioned to
@@ -314,7 +314,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "TáNaRua"
+                  &quot;TáNaRua&quot;
                 </a>{" "}
                 under the direction of master Amir Hadad.
               </h1>
@@ -327,7 +327,7 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "COVID 19"
+                  &quot;COVID 19&quot;
                 </a>
                 , held at the end of the pandemic in Faro, Algarve, Portugal,
                 and{" "}
@@ -337,24 +337,24 @@ function About() {
                   rel="noopener noreferrer"
                   className="hover:text-slate-800 bg-stone-200"
                 >
-                  "Mans don’t cry?"
+                  &quot;Mans don&rsquo;t cry?&quot;
                 </a>{" "}
                 in southern Andalusia, Málaga, Spain.
               </h1>
               <h1>
                 In Cinema, his gateway to the seventh art was acting. He
                 graduated in Film Directing from the International Academy of
-                Cinema (AIC) in Rio de Janeiro, where he created "Sonho de
-                Fumaça" among other films. Later, he studied Film Editing at
-                EICTV in Cuba and then music production at the International
+                Cinema (AIC) in Rio de Janeiro, where he created &quot;Sonho de
+                Fumaça&quot; among other films. Later, he studied Film Editing
+                at EICTV in Cuba and then music production at the International
                 Academy of Electronic Music (AIMEC) in Campinas/SP, the city
                 where he was born.
               </h1>
               <div className="indent-0 space-y-8 pt-16">
                 <h1>CV</h1>
                 <h1>
-                  2021_2024 - Bachelor's Degree in Visual Arts - University of
-                  Algarve (UALG)
+                  2021_2024 - Bachelor&rsquo;s Degree in Visual Arts -
+                  University of Algarve (UALG)
                 </h1>
                 <h1>2023 - University of Fine Arts Málaga (UMA) - ERASMUS</h1>
                 <h1>
@@ -401,6 +401,7 @@ function About() {
                   Curated by Guilherme Gon
                 </h1>
               </div>
+
               <div className="relative w-full h-[35rem]">
                 <Image
                   src={Image2}
