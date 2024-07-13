@@ -13,6 +13,7 @@ export const imageUrls = [
     material: "mix media",
     size: "100x100",
   },
+
   {
     url: "/Inside/11.jpg",
     ano: "2024",
