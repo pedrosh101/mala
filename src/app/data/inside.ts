@@ -504,7 +504,6 @@ export const imageUrls = [
       "/Inside/malavura/4.jpg",
       "/Inside/malavura/2.jpg",
       "/Inside/malavura/3.jpg",
-
     ],
   },
   {
