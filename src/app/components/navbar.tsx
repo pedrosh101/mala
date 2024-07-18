@@ -7,8 +7,36 @@ interface NavbarProps {
   isProjetosPage: boolean;
 }
 
+type Language = "en" | "pt";
+
+interface NavItems {
+  about: string;
+  inside: string;
+  outside: string;
+  availableWorks: string;
+  contact: string;
+}
+
+const navItems: Record<Language, NavItems> = {
+  en: {
+    about: "About Bio CV",
+    inside: "Inside",
+    outside: "Outside",
+    availableWorks: "Available Works",
+    contact: "Contact",
+  },
+  pt: {
+    about: "Sobre Bio CV",
+    inside: "Interior",
+    outside: "Exterior",
+    availableWorks: "Trabalhos Disponíveis",
+    contact: "Contato",
+  },
+};
+
 const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [language, setLanguage] = useState<Language>("en");
   const navRef = useRef<HTMLDivElement | null>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -46,6 +74,10 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
     setIsOpen(!isOpen);
   };
 
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "en" ? "pt" : "en"));
+  };
+
   return (
     <div
       className={`flex w-full font-realCourier place-content-end text-sm p-4 sm:p-8 pb-8 z-50 ${
@@ -54,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           : "text-white hover:text-red-50"
       }`}
     >
-      <div className="flex">
+      <div className="flex items-center">
         {/* Hamburger icon for mobile */}
         <div onClick={toggleNav} className="cursor-pointer h-4 sm:hidden">
           <svg fill="none" viewBox="0 0 15 15" width="2.7em">
@@ -69,20 +101,23 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
         {/* Horizontal menu for desktop */}
         <div className="hidden sm:flex space-x-8 pt-3 h-fit w-fit">
           <Link href="/about">
-            <p>About Bio CV</p>
+            <p>{navItems[language].about}</p>
           </Link>
           <Link href="/inside">
-            <p>Inside</p>
+            <p>{navItems[language].inside}</p>
           </Link>
           <Link href="/outside">
-            <p>Outside</p>
+            <p>{navItems[language].outside}</p>
           </Link>
           <Link href="/available-works">
-            <p>Available Works</p>
+            <p>{navItems[language].availableWorks}</p>
           </Link>
           <Link href="/contact">
-            <p>Contact</p>
+            <p>{navItems[language].contact}</p>
           </Link>
+          <button onClick={toggleLanguage} className="pl-8">
+            {language === "en" ? "En/Pt" : "Pt/En"}
+          </button>
         </div>
       </div>
       {/* Overlay for mobile */}
@@ -103,25 +138,35 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           >
             X
           </button>
-
-          <Link href="/">
-            <p className="pb-16 sm:hidden text-base">Home</p>
-          </Link>
+          <div className="pb-16">
+            <Link href="/">
+              <p className="sm:hidden text-base">Home</p>
+            </Link>
+          </div>
           <Link href="/about">
-            <p className="hover:text-red-50 pb-8">About Bio CV</p>
+            <p className="hover:text-red-50 pb-8">{navItems[language].about}</p>
           </Link>
           <Link href="/inside">
-            <p className="hover:text-red-50">Inside</p>
+            <p className="hover:text-red-50">{navItems[language].inside}</p>
           </Link>
           <Link href="/outside">
-            <p className="hover:text-red-50 pb-8">Outside</p>
+            <p className="hover:text-red-50 pb-8">
+              {navItems[language].outside}
+            </p>
           </Link>
           <Link href="/available-works">
-            <p className="hover:text-red-50">Available Works</p>
+            <p className="hover:text-red-50">
+              {navItems[language].availableWorks}
+            </p>
           </Link>
           <Link href="/contact">
-            <p className="hover:text-red-50">Contact</p>
+            <p className="hover:text-red-50">{navItems[language].contact}</p>
           </Link>
+          <div className="pt-8">
+            <button onClick={toggleLanguage}>
+              {language === "en" ? "En/Pt" : "Pt/En"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

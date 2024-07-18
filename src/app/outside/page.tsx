@@ -6,7 +6,6 @@ import { imageUrls } from "@/app/data/outside";
 import dynamic from 'next/dynamic';
 import Image from "next/image";
 
-// Use dynamic import to load ReactPlayer only on the client
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 function Outside() {
@@ -14,7 +13,7 @@ function Outside() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Set to true when the component is rendered on the client
+    setIsClient(true);
   }, []);
 
   const filteredImages = selectedProject
@@ -24,7 +23,7 @@ function Outside() {
   return (
     <>
       <Navbar isProjetosPage={true} />
-      <div className="flex flex-col bg-slate-50 min-h-screen  py-10 font-realCourier px-4 text-black text-sm">
+      <div className="flex flex-col bg-slate-50 min-h-screen py-10 font-realCourier sm:px-4 px-1 text-black text-[0.820rem] sm:text-sm">
         <div className="flex flex-col mb-10">
           <button
             onClick={() => setSelectedProject("wall")}
@@ -42,13 +41,13 @@ function Outside() {
             onClick={() => setSelectedProject("futAn")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2024. Futuro Ancestral
+            2023. Futuro Ancestral
           </button>
           <button
             onClick={() => setSelectedProject("man")}
             className="mx-2 py-2 px-4 rounded"
           >
-            2024. Performance Man don&rsquo;t cry?, Malaga
+            2023. Performance Man don&rsquo;t cry?, Malaga
           </button>
           <button
             onClick={() => setSelectedProject("chess")}
@@ -56,9 +55,6 @@ function Outside() {
           >
             2022. Chess of 21 Century - Faro, Algarve - PT
           </button>
-
-          
-
           <button
             onClick={() => setSelectedProject("covid")}
             className="mx-2 py-2 px-4 rounded"

@@ -69,6 +69,12 @@ export const imageUrls = [
     title: "",
     project: "wall",
   },
+  {
+    url: "",
+    title: "",
+    project: "wall",
+    yt: "https://www.youtube.com/watch?v=8U9GXPYzKZw",
+  },
 
   {
     url: "/Outside/lifeh/1.jpg",
@@ -115,11 +121,7 @@ export const imageUrls = [
     title: "",
     project: "lifeh",
   },
-  {
-    url: "/Outside/man/21.jpg",
-    title: "",
-    project: "man",
-  },
+
   {
     url: "/Outside/man/1.jpg",
     title: "",
@@ -170,67 +172,7 @@ export const imageUrls = [
     title: "",
     project: "man",
   },
-  {
-    url: "/Outside/man/11.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/12.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/13.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/14.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/15.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/16.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/17.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/18.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/19.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/20.jpg",
-    title: "",
-    project: "man",
-  },
 
-  {
-    url: "/Outside/man/22.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/23.jpg",
-    title: "",
-    project: "man",
-  },
   {
     url: "",
     title: "",
@@ -332,16 +274,6 @@ export const imageUrls = [
   },
   {
     url: "/Outside/covid/13.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/14.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/15.jpg",
     title: "",
     project: "covid",
   },

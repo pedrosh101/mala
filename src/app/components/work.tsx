@@ -60,6 +60,7 @@ function Work({ imageUrls }: any) {
               spaceBetween={30}
               slidesPerView={1}
               navigation
+              loop={true}
               pagination={{ clickable: true }}
               modules={[Navigation, Pagination]}
             >
