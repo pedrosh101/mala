@@ -48,7 +48,7 @@ function Inside() {
                 </button>
               ))}
               <div className="mx-2 pt-2 px-4 flex justify-end hover:text-slate-800">
-                <a href="/portfolio.pdf" download>
+                <a href="/Mala-Portfolio.pdf" download>
                   Portfólio Download
                 </a>
               </div>
