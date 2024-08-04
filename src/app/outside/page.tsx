@@ -43,24 +43,14 @@ function Outside() {
           >
             2023. Futuro Ancestral
           </button>
-          <button
-            onClick={() => setSelectedProject("man")}
-            className="mx-2 py-2 px-4 rounded"
-          >
-            2023. Performance Man don&rsquo;t cry?, Malaga
-          </button>
+
           <button
             onClick={() => setSelectedProject("chess")}
             className="mx-2 py-2 px-4 rounded"
           >
             2022. Chess of 21 Century - Faro, Algarve - PT
           </button>
-          <button
-            onClick={() => setSelectedProject("covid")}
-            className="mx-2 py-2 px-4 rounded"
-          >
-            2021. performance COVID19, Faro
-          </button>
+
           <button
             onClick={() => setSelectedProject("vida")}
             className="mx-2 py-2 px-4 rounded"

@@ -26,6 +26,7 @@ function About() {
           </div>
           {language === "pt" ? (
             <>
+                <h1 className="text-center text-sm">&quot;Ame a arte em você, nao voce na arte&quot; - Constantin Stanislavski</h1>
               <div className="relative w-full h-[35rem]">
                 <Image
                   src={Image1}
@@ -91,69 +92,7 @@ function About() {
                 carregam quase sempre uma mensagem filosófica, existencial,
                 psicológica ou/e uma crítica social em seu conteúdo.
               </h1>
-              <h1 className="py-6">
-                Sua prática/pesquisa artística vai muito além da Pintura e do
-                Grafitti,{" "}
-                <a
-                  href="https://www.instagram.com/arts.of.mala?igsh=MWJqb29pcDNrZjM3Mg%3D%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  @arts.of.mala
-                </a>{" "}
-                atuou nos palcos e sets de filmagem nos 10 anos que antecederam
-                a Pandemia. Fez teatro nos palcos e nas ruas Cariocas,
-                integrando o grupo{" "}
-                <a
-                  href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;TáNaRua&quot;
-                </a>
-                , do mestre Amir Hadad.
-              </h1>
-              <h1>
-                Explora e pesquisa também as possibilidades da Performance como
-                em{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;COVID 19&quot;
-                </a>
-                , realizada no final da Pandemia em Faro, Algarve, Portugal e{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;Mans don&rsquo;t cry?&quot;
-                </a>
-                , no sul da Andaluzia, em Málaga na Espanha.
-              </h1>
-              <h1>
-                No Cinema, sua janela de entrada na sétima arte foi a atuação.
-                Formou-se em Direção Cinematográfica pela Academia Internacional
-                de Cinema (AIC) no Rio de Janeiro onde realizou{" "}
-                <a
-                  href="https://vimeo.com/215559046"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  Sonho de Fumaça
-                </a>{" "}
-                entre outros filmes. Posteriormente estudou Montagem
-                Cinematográfica na EICTV, em Cuba e depois produção musical na
-                Academia Internacional de Música Eletrônica (AIMEC), em
-                Campinas/SP, cidade em que nasceu.
-              </h1>
+
               <div className="indent-0 space-y-8 pt-16">
                 <h1>CV</h1>
                 <h1>
@@ -165,26 +104,7 @@ function About() {
                   2022 - Università degli Studi di Bari Aldo Moro (UNIBA) -
                   ERASMUS
                 </h1>
-                <h1>
-                  2020 - Workshop de Cinema com Lucrecia Martel - Academia
-                  Internacional de Cinema (AIC)
-                </h1>
-                <h1>2020 - Produção musical - AIMEC</h1>
-                <h1>
-                  2018 - Taller montagem - Escuela Internacional de Cine y
-                  Televisión (EICTV)
-                </h1>
-                <h1>
-                  2016_17 - Direção Cinematográfica - Academia Internacional de
-                  Cinema (AIC), Rio de Janeiro
-                </h1>
-                <h1>
-                  2016 - Método Fátima Toledo - Studio Fátima Toledo, São Paulo
-                </h1>
-                <h1>
-                  2013_15 - Atuação para Teatro, TV e Cinema - Escola de Atores
-                  Wolf Maya, Rio de Janeiro/São Paulo
-                </h1>
+
                 <h1 className="pt-16">Exposições</h1>
                 <h1>
                   2024 - Exposição Coletiva AMALGAMA
@@ -219,6 +139,7 @@ function About() {
             </>
           ) : (
             <>
+            <h1 className="text-center text-sm">&quot;Love the art in you, not you in the art&quot; - Constantin Stanislavski</h1>
               <div className="relative w-full h-[35rem]">
                 <Image
                   src={Image1}
@@ -234,7 +155,7 @@ function About() {
                 cinema until the 2020 pandemic, when painting became his main
                 artistic expression.
               </h1>
-              <h1 className="pb-6">
+              <h1>
                 He relocated to Europe to study arts, earning a degree in Visual
                 Arts from the University of Algarve (UALG), studying under
                 masters such as Rui Sanches, Alexandre Barata (Xana), Pedro
@@ -292,64 +213,8 @@ function About() {
                 almost always carry a philosophical, existential, psychological,
                 or social critique in their content.
               </h1>
-              <h1 className="py-6">
-                His artistic practice and research go far beyond Painting and
-                Graffiti.
-              </h1>
-              <h1>
-                <a
-                  href="https://www.instagram.com/arts.of.mala"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  @arts.of.mala
-                </a>{" "}
-                worked on stages and film sets for the 10 years preceding the
-                pandemic. He performed in theater on the stages and streets of
-                Rio de Janeiro, integrating the group{" "}
-                <a
-                  href="https://www.instagram.com/grupotanarua?igsh=OXdqMmpjM3JkYzNu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;TáNaRua&quot;
-                </a>{" "}
-                under the direction of master Amir Hadad.
-              </h1>
-              <h1>
-                He also explores and researches the possibilities of
-                Performance, as seen in{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=cMKIiT-bfI0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;COVID 19&quot;
-                </a>
-                , held at the end of the pandemic in Faro, Algarve, Portugal,
-                and{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=pA5Z8Jld9Gk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-slate-800 bg-stone-200"
-                >
-                  &quot;Mans don&rsquo;t cry?&quot;
-                </a>{" "}
-                in southern Andalusia, Málaga, Spain.
-              </h1>
-              <h1>
-                In Cinema, his gateway to the seventh art was acting. He
-                graduated in Film Directing from the International Academy of
-                Cinema (AIC) in Rio de Janeiro, where he created &quot;Sonho de
-                Fumaça&quot; among other films. Later, he studied Film Editing
-                at EICTV in Cuba and then music production at the International
-                Academy of Electronic Music (AIMEC) in Campinas/SP, the city
-                where he was born.
-              </h1>
+
+
               <div className="indent-0 space-y-8 pt-16">
                 <h1>CV</h1>
                 <h1>
@@ -361,26 +226,7 @@ function About() {
                   2022 - Università degli Studi di Bari Aldo Moro (UNIBA) -
                   ERASMUS
                 </h1>
-                <h1>
-                  2020 - Cinema Workshop with Lucrecia Martel - International
-                  Academy of Cinema (AIC)
-                </h1>
-                <h1>2020 - Music Production - AIMEC</h1>
-                <h1>
-                  2018 - Editing Workshop - International School of Film and
-                  Television (EICTV)
-                </h1>
-                <h1>
-                  2016_17 - Film Directing - International Academy of Cinema
-                  (AIC), Rio de Janeiro
-                </h1>
-                <h1>
-                  2016 - Fátima Toledo Method - Studio Fátima Toledo, São Paulo
-                </h1>
-                <h1>
-                  2013_15 - Acting for Theater, TV, and Film - Wolf Maya Actors
-                  School, Rio de Janeiro/São Paulo
-                </h1>
+
                 <h1 className="pt-16">Exhibitions</h1>
                 <h1>
                   2024 - Group Exhibition AMALGAMA <br />

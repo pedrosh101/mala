@@ -122,56 +122,7 @@ export const imageUrls = [
     project: "lifeh",
   },
 
-  {
-    url: "/Outside/man/1.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/2.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/3.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/4.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/5.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/6.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/7.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/8.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/9.jpg",
-    title: "",
-    project: "man",
-  },
-  {
-    url: "/Outside/man/10.jpg",
-    title: "",
-    project: "man",
-  },
+
 
   {
     url: "",
@@ -216,73 +167,7 @@ export const imageUrls = [
     title: "",
     project: "chess",
   },
-  {
-    url: "/Outside/covid/1.jpg",
-    title: "",
-    project: "covid",
-  },
-
-  {
-    url: "/Outside/covid/3.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/4.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/5.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/6.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/7.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/8.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/9.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/10.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/11.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/12.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "/Outside/covid/13.jpg",
-    title: "",
-    project: "covid",
-  },
-  {
-    url: "",
-    title: "",
-    project: "covid",
-    yt: "https://www.youtube.com/watch?v=cMKIiT-bfI0",
-  },
+ 
   {
     url: "/Outside/maraca/1.jpg",
     title: "",
